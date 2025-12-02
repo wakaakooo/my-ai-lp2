@@ -1,36 +1,37 @@
-<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>President AI Academy | 助成金活用型 AI人材育成プログラム</title>
-    <meta name="description" content="中小企業の経営者・役員層に特化した、実践的AI活用ビデオプログラム。人材開発支援助成金を活用し、最大75%のコスト削減を実現します。">
+    <title>withAI | 助成金活用型 AI人材育成プログラム</title>
+    <meta name="description" content="中小企業の経営者・役員層に特化した、実践的AI活用ビデオプログラム。人材開発支援助成金を活用し、大幅なコスト削減を実現します。">
     
-    <!-- Google Fonts: 信頼感のあるNoto Sans JP -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     
     <style>
         /* =========================================
            基本設定 / カラーパレット
            ========================================= */
         :root {
-            --color-navy: #0F172A;       /* ベースカラー（信頼・知性） */
-            --color-navy-light: #1E293B; /* 明るめのネイビー */
-            --color-gold: #C29B40;       /* アクセント（高級感・品質） */
+            --color-navy: #0F172A;       /* ベースカラー */
+            --color-navy-light: #1E293B; 
+            --color-gold: #C29B40;       /* アクセント */
             --color-gold-hover: #D4AF37; 
-            --color-gold-light: #FDF8E8; /* ゴールドの薄い背景色 */
-            --color-red: #DC2626;        /* 強調用（助成金など） */
+            --color-gold-light: #FDF8E8; 
+            --color-red: #DC2626;        /* 強調 */
             
             --color-text-body: #334155;
             --color-text-white: #FFFFFF;
-            --color-bg-light: #F8FAFC;   /* 清潔感のある白背景 */
+            --color-bg-light: #F8FAFC;
             
             --font-main: "Noto Sans JP", sans-serif;
+            --font-serif: "Playfair Display", serif; /* Qアイコン用 */
             --max-width: 1080px;         
             
             --btn-shadow: 0 4px 15px rgba(194, 155, 64, 0.4);
+            --easing: cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
 
         /* リセットCSS */
@@ -42,7 +43,7 @@
             line-height: 1.8;
             background-color: var(--color-bg-light);
             font-size: 16px;
-            padding-bottom: 80px; /* SPの追従ボタン用余白 */
+            padding-bottom: 80px;
         }
 
         a { text-decoration: none; color: inherit; transition: 0.3s; }
@@ -59,10 +60,9 @@
         }
 
         .section {
-            padding: 80px 0;
+            padding: 100px 0;
         }
 
-        /* セクション見出し */
         .section-header {
             text-align: center;
             margin-bottom: 60px;
@@ -91,7 +91,6 @@
             color: #64748B;
         }
 
-        /* 高級感のあるCTAボタン */
         .btn-cta {
             display: inline-block;
             background: linear-gradient(135deg, var(--color-gold) 0%, #B08D38 100%);
@@ -105,6 +104,7 @@
             letter-spacing: 0.05em;
             width: 100%;
             max-width: 320px;
+            transition: transform 0.3s var(--easing), box-shadow 0.3s var(--easing);
         }
 
         .btn-cta:hover {
@@ -128,7 +128,7 @@
         }
 
         /* =========================================
-           1. ヘッダー
+           ヘッダー
            ========================================= */
         header {
             background-color: white;
@@ -149,12 +149,13 @@
         }
 
         .logo {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--color-navy);
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 4px;
+            letter-spacing: -0.02em;
         }
         
         .logo span { color: var(--color-gold); }
@@ -173,11 +174,11 @@
         }
 
         /* =========================================
-           2. ヒーローセクション
+           ヒーローセクション
            ========================================= */
         .hero {
             background-color: var(--color-navy);
-            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1492571350019-22de08371fd3?q=80&w=2000&auto=format&fit=crop');
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2000&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
             color: white;
@@ -201,11 +202,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 40px;
+            gap: 50px;
         }
 
         .hero-text {
-            max-width: 600px;
+            max-width: 550px;
         }
 
         .hero-badge {
@@ -245,44 +246,12 @@
             justify-content: center;
         }
         
-        .hero-card {
-            background: rgba(255,255,255,0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 8px;
+        .hero-img-stat {
             width: 100%;
-            max-width: 400px;
-            background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop'); 
-            background-size: cover;
-            position: relative;
-            height: 240px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .hero-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.5);
-            border-radius: 8px;
-        }
-
-        .play-btn {
-            width: 60px;
-            height: 60px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-navy);
-            font-size: 24px;
-            z-index: 2;
-            cursor: pointer;
-            box-shadow: 0 0 20px rgba(255,255,255,0.3);
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border: 4px solid rgba(255,255,255,0.1);
         }
 
         @media (max-width: 768px) {
@@ -293,12 +262,10 @@
         }
 
         /* =========================================
-           3. 課題セクション
+           課題・助成金解説
            ========================================= */
-        .problems {
-            background-color: white;
-        }
-
+        .problems { background-color: white; }
+        
         .problems-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -312,25 +279,9 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
-        .problem-icon {
-            font-size: 2rem;
-            margin-bottom: 16px;
-            color: var(--color-navy);
-        }
+        .problem-icon { font-size: 2rem; margin-bottom: 16px; color: var(--color-navy); }
+        .problem-item h3 { font-size: 1.2rem; margin-bottom: 16px; color: var(--color-navy); }
 
-        .problem-item h3 {
-            font-size: 1.2rem;
-            margin-bottom: 16px;
-            color: var(--color-navy);
-        }
-
-        @media (max-width: 768px) {
-            .problems-grid { grid-template-columns: 1fr; }
-        }
-
-        /* =========================================
-           4. 助成金解説セクション
-           ========================================= */
         .subsidy-section {
             background: linear-gradient(to bottom, #F8FAFC, #FFFFFF);
             border-bottom: 1px solid #eee;
@@ -357,13 +308,6 @@
             border-radius: 50px;
         }
 
-        .subsidy-content h3 {
-            text-align: center;
-            font-size: 1.8rem;
-            color: var(--color-navy);
-            margin-bottom: 30px;
-        }
-
         .subsidy-points {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -377,31 +321,11 @@
             padding: 20px;
             border-radius: 8px;
         }
-
+        
         .subsidy-point strong {
-            display: block;
-            color: var(--color-red);
-            font-size: 1.4rem;
-            margin-bottom: 8px;
+            display: block; color: var(--color-red); font-size: 1.2rem; margin-bottom: 8px;
         }
-
-        .subsidy-math {
-            background: var(--color-navy);
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 1.1rem;
-            position: relative;
-        }
-
-        .subsidy-math span {
-            color: #FCD34D;
-            font-weight: 700;
-            font-size: 1.4rem;
-        }
-
-        /* 重要事項の注記 */
+        
         .subsidy-caution {
             background: #fff;
             border: 1px solid var(--color-red);
@@ -414,13 +338,117 @@
             font-weight: bold;
         }
 
-        @media (max-width: 768px) {
-            .subsidy-points { grid-template-columns: 1fr; }
-            .subsidy-content h3 { font-size: 1.4rem; }
+        /* =========================================
+           動画カリキュラムリスト
+           ========================================= */
+        .curriculum-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .curriculum-item {
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 1px solid #E2E8F0;
+            margin-bottom: 16px;
+            padding: 20px 24px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        
+        .curriculum-item:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-color: var(--color-navy);
+        }
+        
+        .chapter-badge {
+            background: var(--color-navy);
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .chapter-content h3 {
+            font-size: 1.1rem;
+            color: var(--color-navy);
+            margin-bottom: 4px;
+        }
+        
+        .chapter-content p {
+            font-size: 0.9rem;
+            color: #64748B;
+            margin: 0;
         }
 
         /* =========================================
-           5. 講座タイプ
+           導入ステップ
+           ========================================= */
+        .flow-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .flow-card {
+            background: white;
+            border: 1px solid #E2E8F0;
+            border-radius: 8px;
+            padding: 30px 20px;
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+        
+        /* 矢印 */
+        .flow-card:not(:last-child)::after {
+            content: '▶';
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--color-navy);
+            font-size: 1.2rem;
+            z-index: 1;
+        }
+        
+        .flow-step {
+            display: inline-block;
+            background: var(--color-gold);
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+        
+        .flow-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--color-navy);
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .problems-grid, .subsidy-points { grid-template-columns: 1fr; }
+            .flow-container { flex-direction: column; gap: 40px; }
+            .flow-card:not(:last-child)::after {
+                content: '▼';
+                right: 50%;
+                bottom: -30px;
+                top: auto;
+                transform: translateX(50%);
+            }
+        }
+
+        /* =========================================
+           講座タイプ
            ========================================= */
         .course-types {
             display: grid;
@@ -451,60 +479,16 @@
             font-weight: 700;
             flex-shrink: 0;
         }
-
+        
         @media (max-width: 768px) {
             .course-types { grid-template-columns: 1fr; }
         }
 
         /* =========================================
-           6. プロンプト体験
-           ========================================= */
-        .demo-section {
-            background-color: var(--color-gold-light);
-            padding: 100px 0;
-        }
-
-        .demo-wrapper {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            border: 1px solid rgba(194, 155, 64, 0.2);
-        }
-
-        .prompt-textarea {
-            width: 100%;
-            height: 150px;
-            padding: 20px;
-            border: 2px solid #E2E8F0;
-            border-radius: 8px;
-            background-color: #F8FAFC;
-            font-family: monospace;
-            resize: none;
-            color: #334155;
-            margin-bottom: 16px;
-        }
-        
-        .copy-btn {
-            display: block;
-            width: 100%;
-            background-color: var(--color-navy);
-            color: white;
-            border: none;
-            padding: 14px;
-            border-radius: 6px;
-            font-weight: 700;
-            cursor: pointer;
-        }
-
-        /* =========================================
-           7. 料金プラン
+           料金プラン
            ========================================= */
         .pricing-section {
             background-color: white;
-            padding-bottom: 120px;
         }
 
         .pricing-wrapper {
@@ -515,7 +499,6 @@
             flex-wrap: wrap;
         }
 
-        /* 共通カードスタイル */
         .pricing-card {
             background: white;
             border: 1px solid #E2E8F0;
@@ -529,12 +512,10 @@
             transition: 0.3s;
         }
 
-        /* プランA：社長向け */
-        .pricing-card.plan-a {
-            border-top: 6px solid var(--color-navy);
-        }
+        /* プランA */
+        .pricing-card.plan-a { border-top: 6px solid var(--color-navy); }
 
-        /* プランB：助成金活用 */
+        /* プランB */
         .pricing-card.plan-b {
             border: 2px solid var(--color-gold);
             background: #FFFCF5;
@@ -571,16 +552,9 @@
             color: var(--color-navy);
         }
 
-        .price-large {
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
+        .price-large { font-size: 2.5rem; font-weight: 700; }
+        .price-sub { font-size: 0.9rem; color: #64748B; }
         
-        .price-sub {
-            font-size: 0.9rem;
-            color: #64748B;
-        }
-
         .price-highlight {
             color: var(--color-red);
             font-weight: 700;
@@ -589,35 +563,18 @@
             font-size: 1.1rem;
         }
 
-        .pricing-features {
-            margin: 20px 0;
-            flex-grow: 1;
-        }
-
+        .pricing-features { margin: 20px 0; flex-grow: 1; }
         .pricing-features li {
             margin-bottom: 12px;
             padding-left: 24px;
             position: relative;
             font-size: 0.95rem;
         }
-
         .pricing-features li::before {
-            content: '✔';
-            position: absolute;
-            left: 0;
-            color: var(--color-gold);
-            font-weight: bold;
+            content: '✔'; position: absolute; left: 0; color: var(--color-gold); font-weight: bold;
         }
-
-        /* 必須条件の赤文字 */
-        .pricing-features li.required {
-            color: var(--color-red);
-            font-weight: bold;
-        }
-        .pricing-features li.required::before {
-            content: '⚠️';
-            color: inherit;
-        }
+        .pricing-features li.required { color: var(--color-red); font-weight: bold; }
+        .pricing-features li.required::before { content: '⚠️'; color: inherit; }
 
         .campaign-box {
             background: var(--color-navy);
@@ -627,10 +584,133 @@
             text-align: center;
             margin-bottom: 20px;
         }
-        
-        .campaign-box strong {
-            color: #FCD34D;
-            font-size: 1.1rem;
+        .campaign-box strong { color: #FCD34D; font-size: 1.1rem; }
+
+        /* =========================================
+           FAQセクション（NEW: リッチデザイン）
+           ========================================= */
+        .faq-section {
+            background-color: #F8FAFC;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border: 1px solid #E2E8F0;
+            transition: all 0.3s var(--easing);
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+            transform: translateY(-2px);
+        }
+
+        .faq-question {
+            padding: 24px 32px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 700;
+            color: var(--color-navy);
+            position: relative;
+        }
+
+        .faq-q-icon {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .q-mark {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, #D4AF37, #C29B40);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-style: italic;
+            flex-shrink: 0;
+        }
+
+        /* 矢印アイコン */
+        .faq-toggle {
+            width: 24px;
+            height: 24px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-toggle::before, .faq-toggle::after {
+            content: '';
+            position: absolute;
+            background-color: var(--color-gold);
+            border-radius: 2px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .faq-toggle::before { width: 16px; height: 2px; }
+        .faq-toggle::after { width: 2px; height: 16px; transition: transform 0.3s ease; }
+
+        /* 開いた状態 */
+        .faq-item.active .faq-toggle { transform: rotate(180deg); }
+        .faq-item.active .faq-toggle::after { transform: translate(-50%, -50%) rotate(90deg); opacity: 0; }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s var(--easing);
+            background-color: #fdfdfd;
+        }
+
+        .faq-answer-inner {
+            padding: 0 32px 32px 64px; /* Qアイコン分インデント */
+            color: var(--color-text-body);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            border-top: 1px solid #F1F5F9;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .faq-answer-inner { padding: 20px; }
+        }
+
+        /* =========================================
+           プロンプト体験
+           ========================================= */
+        .demo-section {
+            background-color: var(--color-gold-light);
+            padding: 100px 0;
+        }
+        .demo-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 1px solid rgba(194, 155, 64, 0.2);
+        }
+        .prompt-textarea {
+            width: 100%; height: 150px; padding: 20px;
+            border: 2px solid #E2E8F0; border-radius: 8px;
+            background-color: #F8FAFC; font-family: monospace; resize: none;
+            color: #334155; margin-bottom: 16px;
+        }
+        .copy-btn {
+            display: block; width: 100%; background-color: var(--color-navy);
+            color: white; border: none; padding: 14px;
+            border-radius: 6px; font-weight: 700; cursor: pointer;
         }
 
         /* =========================================
@@ -642,30 +722,19 @@
             padding: 60px 0 100px;
             text-align: center;
         }
-        
         .copyright {
             border-top: 1px solid rgba(255,255,255,0.1);
             padding-top: 20px;
             font-size: 0.8rem;
             color: #64748B;
         }
-        
         .bottom-cta-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: white;
-            padding: 16px;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
-            z-index: 9999;
-            display: flex;
-            justify-content: center;
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            background-color: white; padding: 16px;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.1); z-index: 9999;
+            display: flex; justify-content: center;
         }
-
-        @media (min-width: 769px) {
-            .bottom-cta-bar { display: none; }
-        }
+        @media (min-width: 769px) { .bottom-cta-bar { display: none; } }
 
     </style>
 </head>
@@ -674,7 +743,7 @@
     <!-- ヘッダー -->
     <header>
         <div class="container header-inner">
-            <div class="logo">President AI <span>Academy</span></div>
+            <div class="logo">withAI</div>
             <a href="#pricing" class="header-btn">プラン・料金を見る</a>
         </div>
     </header>
@@ -696,13 +765,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <div class="hero-card">
-                    <div class="play-btn">▶</div>
-                    <div style="position: absolute; bottom: 20px; left: 20px; z-index: 2; color: white; text-align: left;">
-                         <strong>AI時代の経営戦略（ダイジェスト）</strong><br>
-                         <span style="font-size: 0.8rem; opacity: 0.8;">再生時間：15分</span>
-                    </div>
-                </div>
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2000&auto=format&fit=crop" alt="AIを活用するビジネスチーム" class="hero-img-stat">
             </div>
         </div>
     </section>
@@ -734,6 +797,86 @@
         </div>
     </section>
 
+    <!-- カリキュラム詳細 -->
+    <section class="section" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">カリキュラム内容</h2>
+                <p class="section-subtitle">動画講義で学ぶ、実践的なステップ</p>
+            </div>
+            <div class="curriculum-list">
+                <div class="curriculum-item">
+                    <span class="chapter-badge">Chapter 1</span>
+                    <div class="chapter-content">
+                        <h3>AI時代の経営戦略とビジネスインパクト</h3>
+                        <p>生成AIの仕組みと、なぜ今ビジネスで必須なのかを理解する。</p>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <span class="chapter-badge">Chapter 2</span>
+                    <div class="chapter-content">
+                        <h3>リスクマネジメントとセキュリティ</h3>
+                        <p>著作権、情報漏洩、ハルシネーションなどのリスク対策。</p>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <span class="chapter-badge">Chapter 3</span>
+                    <div class="chapter-content">
+                        <h3>基本操作とプロンプトエンジニアリング</h3>
+                        <p>意図した回答を引き出すための指示出しテクニック。</p>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <span class="chapter-badge">Chapter 4</span>
+                    <div class="chapter-content">
+                        <h3>部署別活用ケーススタディ（営業・人事・開発）</h3>
+                        <p>各職種における具体的な時短・効率化事例の実演。</p>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <span class="chapter-badge">Chapter 5</span>
+                    <div class="chapter-content">
+                        <h3>社内導入のロードマップ作成</h3>
+                        <p>自社にAI文化を根付かせるためのステップ論。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 導入ステップ -->
+    <section class="section" style="background-color: white;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">導入はとてもシンプルです</h2>
+                <p class="section-subtitle">最短期間で社内への展開が可能です</p>
+            </div>
+            
+            <div class="flow-container">
+                <div class="flow-card">
+                    <span class="flow-step">STEP 1</span>
+                    <div class="flow-title">お申し込み<br>アカウント発行</div>
+                </div>
+                <div class="flow-card">
+                    <span class="flow-step">STEP 2</span>
+                    <div class="flow-title">管理者様による<br>ユーザー登録</div>
+                </div>
+                <div class="flow-card">
+                    <span class="flow-step">STEP 3</span>
+                    <div class="flow-title">社員各自で<br>動画視聴</div>
+                </div>
+                <div class="flow-card">
+                    <span class="flow-step">STEP 4</span>
+                    <div class="flow-title">実践ワーク<br>社内への展開</div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=2000&auto=format&fit=crop" alt="ミーティング風景" style="max-width: 100%; border-radius: 8px; margin: 0 auto; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
     <!-- 助成金解説 -->
     <section class="section subsidy-section">
         <div class="container">
@@ -745,7 +888,7 @@
             <div class="subsidy-box">
                 <span class="subsidy-label">返済不要・大企業もOK</span>
                 <div class="subsidy-content">
-                    <h3>受講料の60%～最大75%が戻ってきます</h3>
+                    <h3>受講料の60%〜最大75%が戻ってきます</h3>
                     <div class="subsidy-points">
                         <div class="subsidy-point">
                             <strong>審査なし</strong>
@@ -760,17 +903,11 @@
                             <p>複雑な計画届の作成から<br>申請まで徹底支援します。</p>
                         </div>
                     </div>
-                    <div class="subsidy-math">
-                        通常1人40万円の講座が... <span style="margin: 0 10px;">→</span> 実質負担 <span style="font-size: 2rem;">約10万円</span> で受講可能
-                        <div style="font-size: 0.9rem; margin-top: 8px; opacity: 0.9;">※中小企業で75%助成の場合の試算です。詳細はお問い合わせください。</div>
-                    </div>
                     
-                    <!-- 【重要】助成金要件の追記 -->
                     <div class="subsidy-caution">
                         【重要】助成金の活用は、社会保険に登録されている方のみ対象です。<br>
                         <span style="font-weight:normal; font-size:0.85rem;">※社長・役員の方は対象外ですが、キャンペーン適用で無料になります。</span>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -848,15 +985,15 @@
 
                 <!-- プラン2: 社員研修（助成金） -->
                 <div class="pricing-card plan-b">
-                    <span class="plan-badge">おすすめ！助成金で最大75%還元</span>
+                    <span class="plan-badge">おすすめ！助成金活用で大幅還元</span>
                     <div class="pricing-title">社員リスキリングプラン</div>
                     <p style="text-align: center; color: #666; font-size: 0.9rem;">組織全体の生産性を上げたい方へ</p>
                     
                     <div class="pricing-price">
-                        <span class="price-large">400,000</span>
+                        <span class="price-large">300,000</span>
                         <span class="price-sub">円/人（税別）</span>
-                        <span class="price-highlight">➡ 実質 約100,000円～</span>
-                        <span style="font-size: 0.8rem; color: #666;">（人材開発支援助成金活用時）</span>
+                        <span class="price-highlight">➡ 実質 約100,000円〜</span>
+                        <span style="font-size: 0.8rem; color: #666;">（3名様受講で助成金利用時）</span>
                     </div>
 
                     <div class="campaign-box">
@@ -869,10 +1006,10 @@
 
                     <ul class="pricing-features">
                         <li><strong>1人1講座（10時間分）</strong></li>
-                        <li class="required">助成金対象：社会保険加入者のみ</li>
-                        <li>Type A～Dから選択可能</li>
+                        <li class="required">助成金申請は3名様受講から</li>
+                        <li class="required">助成金対象：社会保険加入者</li>
+                        <li>Type A〜Dから選択可能</li>
                         <li><strong>助成金申請 完全サポート付き</strong></li>
-                        <li>大企業も利用可能</li>
                     </ul>
 
                     <a href="#contact" class="btn-cta">助成金相談・申し込む</a>
@@ -882,7 +1019,99 @@
         </div>
     </section>
 
-    <!-- プロンプト体験（下部に移動） -->
+    <!-- FAQセクション（新規追加） -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">よくある質問</h2>
+                <p class="section-subtitle">導入に関するご質問にお答えします</p>
+            </div>
+            
+            <div class="faq-container">
+                <!-- Q1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">
+                            <span class="q-mark">Q</span>
+                            <span>助成金の申請手続きは難しいですか？</span>
+                        </div>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            ご安心ください。弊社では提携する社会保険労務士と連携し、複雑な「計画届」の作成から「支給申請」まで、すべてのステップを完全サポートいたします。お客様に行っていただくのは、必要な書類の準備と押印のみです。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">
+                            <span class="q-mark">Q</span>
+                            <span>社長一人でも受講できますか？</span>
+                        </div>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            はい、可能です。社長様お一人での受講の場合は「社長向け戦略プラン（50,000円）」をご利用ください。ただし、助成金を活用した「社員リスキリングプラン」をご希望の場合は、社会保険に加入している社員様3名以上でのご利用が必要となります。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">
+                            <span class="q-mark">Q</span>
+                            <span>AIやITの知識が全くなくても大丈夫ですか？</span>
+                        </div>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            はい、問題ございません。本カリキュラムは、専門用語を極力使わず、ビジネスの現場ですぐに使える具体的な活用方法を中心に構成されています。PCの基本操作ができれば、どなたでも習得可能な内容となっております。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">
+                            <span class="q-mark">Q</span>
+                            <span>支払い方法はどのようになりますか？</span>
+                        </div>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            法人様向けの銀行振込（請求書払い）に対応しております。お申し込み確認後、請求書を発行させていただきます。助成金活用プランの場合、まず全額をお支払いいただき、研修終了後に国から助成金が振り込まれる流れとなります。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">
+                            <span class="q-mark">Q</span>
+                            <span>ChatGPTのアカウントは必要ですか？</span>
+                        </div>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            はい、受講にはChatGPTのアカウント（無料版でも可、推奨は有料版GPT-4）が必要です。アカウントの作成方法についても、導入マニュアルにてご案内しておりますのでご安心ください。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- プロンプト体験 -->
     <section class="section demo-section">
         <div class="container">
             <div class="section-header">
@@ -917,7 +1146,7 @@
     <!-- フッター -->
     <footer id="contact">
         <div class="container">
-            <div class="logo" style="color: white; margin-bottom: 20px;">President AI <span>Academy</span></div>
+            <div class="logo" style="color: white; margin-bottom: 20px;">withAI</div>
             <div style="color: #94A3B8; font-size: 0.9rem; margin-bottom: 20px;">
                 運営：<a href="https://www.withprojects.co.jp/" target="_blank" style="text-decoration: underline; color: inherit;">withprojects株式会社</a><br>
                 お問い合わせ：withprojects.project@gmail.com
@@ -933,7 +1162,9 @@
         <a href="#pricing" class="btn-cta">料金・プランを見る</a>
     </div>
 
+    <!-- JavaScript -->
     <script>
+        // クリップボードコピー機能
         function copyToClipboard() {
             const copyText = document.getElementById("promptText");
             const btnText = document.getElementById("btnText");
@@ -944,6 +1175,35 @@
                 setTimeout(() => { btnText.innerText = "このプロンプトをコピーする"; }, 3000);
             });
         }
+
+        // FAQアコーディオン機能
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const item = question.parentElement;
+                    const answer = question.nextElementSibling;
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+
+                    if (item.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    } else {
+                        answer.style.maxHeight = null;
+                    }
+
+                    // Optional: Close other items
+                    // document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    //     if (otherItem !== item && otherItem.classList.contains('active')) {
+                    //         otherItem.classList.remove('active');
+                    //         otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                    //     }
+                    // });
+                });
+            });
+        });
     </script>
 </body>
 </html>
