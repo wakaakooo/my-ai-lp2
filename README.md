@@ -106,6 +106,7 @@
             width: 100%;
             max-width: 320px;
             transition: transform 0.3s var(--easing), box-shadow 0.3s var(--easing);
+            cursor: pointer;
         }
 
         .btn-cta:hover {
@@ -179,11 +180,12 @@
            ========================================= */
         .hero {
             background-color: var(--color-navy);
-            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2000&auto=format&fit=crop');
+            /* アジア人ビジネスチームの背景画像 */
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 80px 0 100px;
+            padding: 100px 0 120px;
             position: relative;
             overflow: hidden;
         }
@@ -247,6 +249,7 @@
             justify-content: center;
         }
         
+        /* 画像をメインに（動画削除） */
         .hero-img-stat {
             width: 100%;
             max-width: 500px;
@@ -263,7 +266,7 @@
         }
 
         /* =========================================
-           課題・助成金解説
+           課題
            ========================================= */
         .problems { background-color: white; }
         
@@ -283,6 +286,9 @@
         .problem-icon { font-size: 2rem; margin-bottom: 16px; color: var(--color-navy); }
         .problem-item h3 { font-size: 1.2rem; margin-bottom: 16px; color: var(--color-navy); }
 
+        /* =========================================
+           助成金解説
+           ========================================= */
         .subsidy-section {
             background: linear-gradient(to bottom, #F8FAFC, #FFFFFF);
             border-bottom: 1px solid #eee;
@@ -337,7 +343,7 @@
         .subsidy-math {
             background: var(--color-navy);
             color: white;
-            padding: 20px;
+            padding: 25px;
             border-radius: 8px;
             text-align: center;
             font-size: 1.1rem;
@@ -369,7 +375,7 @@
         }
 
         /* =========================================
-           動画カリキュラムリスト
+           カリキュラム（リスト形式）
            ========================================= */
         .curriculum-list {
             max-width: 900px;
@@ -378,7 +384,7 @@
         
         .curriculum-item {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             background: white;
             border: 1px solid #E2E8F0;
             margin-bottom: 16px;
@@ -401,22 +407,24 @@
             border-radius: 4px;
             margin-right: 20px;
             flex-shrink: 0;
+            margin-top: 2px;
         }
         
         .chapter-content h3 {
             font-size: 1.1rem;
             color: var(--color-navy);
-            margin-bottom: 4px;
+            margin-bottom: 6px;
         }
         
         .chapter-content p {
             font-size: 0.9rem;
             color: #64748B;
             margin: 0;
+            line-height: 1.6;
         }
 
         /* =========================================
-           導入ステップ
+           導入ステップ（フロー図）
            ========================================= */
         .flow-container {
             display: flex;
@@ -439,7 +447,7 @@
         .flow-card:not(:last-child)::after {
             content: '▶';
             position: absolute;
-            right: -20px;
+            right: -22px;
             top: 50%;
             transform: translateY(-50%);
             color: var(--color-navy);
@@ -460,9 +468,9 @@
         
         .flow-title {
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: var(--color-navy);
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         @media (max-width: 768px) {
@@ -492,21 +500,22 @@
             padding: 20px;
             border-radius: 8px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 16px;
         }
         
         .course-card-icon {
             background: var(--color-navy);
             color: white;
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 700;
             flex-shrink: 0;
+            margin-top: 2px;
         }
         
         @media (max-width: 768px) {
@@ -514,7 +523,7 @@
         }
 
         /* =========================================
-           料金プラン
+           料金プラン（修正版）
            ========================================= */
         .pricing-section {
             background-color: white;
@@ -616,7 +625,7 @@
         .campaign-box strong { color: #FCD34D; font-size: 1.1rem; }
 
         /* =========================================
-           FAQセクション（リッチデザイン）
+           FAQセクション
            ========================================= */
         .faq-section {
             background-color: #F8FAFC;
@@ -735,7 +744,8 @@
             color: #334155; margin-bottom: 16px;
         }
         .copy-btn {
-            display: block; width: 100%; background-color: var(--color-navy);
+            display: flex; align-items: center; justify-content: center;
+            width: 100%; background-color: var(--color-navy);
             color: white; border: none; padding: 14px;
             border-radius: 6px; font-weight: 700; cursor: pointer;
         }
@@ -778,4 +788,460 @@
     <!-- ヒーロー -->
     <section class="hero">
         <div class="container hero-container">
-            <div class=
+            <div class="hero-text">
+                <span class="hero-badge">経営者・役員向け</span>
+                <h1>AI導入コストの<br><span>最大75%</span>を助成金で削減。</h1>
+                <p>「なんとなく」の導入で終わらせない。<br>
+                経営戦略としてのAI活用と、社員リスキリングを<br>
+                国の支援制度を活用して実現しませんか？</p>
+                <div class="pc-only-cta">
+                    <a href="#pricing" class="btn-cta">
+                        <small>まずはプランを確認</small>
+                        料金・助成金シミュレーション
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- 画像：アジア人ビジネスマン/チーム -->
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2000&auto=format&fit=crop" alt="AIを活用するビジネスチーム" class="hero-img-stat">
+            </div>
+        </div>
+    </section>
+
+    <!-- 課題 -->
+    <section class="section problems">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">AI導入の「壁」を取り払います</h2>
+                <p class="section-subtitle">コスト、教育、リスク...経営者の悩みをワンストップで解決</p>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-item">
+                    <div class="problem-icon">💰</div>
+                    <h3>教育予算の確保</h3>
+                    <p>外部研修は高額で、全社員への展開が難しい。<br>→ <strong>助成金活用で最大75%還元</strong></p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">🤔</div>
+                    <h3>具体的活用イメージ</h3>
+                    <p>ChatGPTをどう業務に落とし込むか不明。<br>→ <strong>職種別（営業・人事等）の実践講座</strong></p>
+                </div>
+                <div class="problem-item">
+                    <div class="problem-icon">📝</div>
+                    <h3>申請手続きの煩雑さ</h3>
+                    <p>助成金を使いたいが書類作成が面倒。<br>→ <strong>申請完全サポート付きで安心</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 助成金解説 -->
+    <section class="section subsidy-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">「人材開発支援助成金」の活用</h2>
+                <p class="section-subtitle">国が推奨するリスキリング制度をフル活用できます</p>
+            </div>
+            
+            <div class="subsidy-box">
+                <span class="subsidy-label">返済不要・大企業もOK</span>
+                <div class="subsidy-content">
+                    <h3>受講料の75%（経費助成）＋ 賃金助成</h3>
+                    <div class="subsidy-points">
+                        <div class="subsidy-point">
+                            <strong>審査なし</strong>
+                            <p>要件を満たせば受給可能。<br>厳格な審査はありません。</p>
+                        </div>
+                        <div class="subsidy-point">
+                            <strong>経費助成率 75%</strong>
+                            <p>中小企業の場合、経費の<br>最大75%が助成されます。</p>
+                        </div>
+                        <div class="subsidy-point">
+                            <strong>完全サポート</strong>
+                            <p>複雑な計画届の作成から<br>申請まで徹底支援します。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="subsidy-math">
+                        通常1人30万円の講座が... <span style="margin: 0 10px;">→</span> 実質負担 <span style="font-size: 2rem;">約75,000円〜</span>
+                        <div style="font-size: 0.9rem; margin-top: 8px; opacity: 0.9;">
+                            ※中小企業で75%助成適用の場合。<br>
+                            ※別途、訓練中の賃金助成（約960円×時間数）も支給されます。
+                        </div>
+                    </div>
+
+                    <div class="subsidy-caution">
+                        【重要】助成金の活用は、社会保険に登録されている方のみ対象です。<br>
+                        <span style="font-weight:normal; font-size:0.85rem;">※社長・役員の方は対象外ですが、キャンペーン適用で無料になります。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- カリキュラム詳細（動画の代わりにリスト） -->
+    <section class="section" style="background-color: white;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">カリキュラム内容</h2>
+                <p class="section-subtitle">実践的なステップで、現場の業務を直接改善します</p>
+            </div>
+            <div class="curriculum-list">
+                <div class="curriculum-item">
+                    <span class="chapter-badge">Chapter 1</span>
+                    <div class="chapter-content">
+                        <h3>AI時代の経営戦略とビジネスインパクト</h3>
+                        <p>生成AIの仕組みと、なぜ今ビジネスで必須なのかを理解する。</p>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <span class="chapter-badge">Chapter 2</span>
+                    <div class="chapter-content">
+                        <h3>リスクマネジメントとセキュリティ</h3>
+                        <p>著作権、情報漏洩、ハルシネーションなどのリスク対策。</p>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <span class="chapter-badge">Chapter 3</span>
+                    <div class="chapter-content">
+                        <h3>基本操作とプロンプトエンジニアリング</h3>
+                        <p>意図した回答を引き出すための指示出しテクニック。</p>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <span class="chapter-badge">Chapter 4</span>
+                    <div class="chapter-content">
+                        <h3>部署別活用ケーススタディ（営業・人事・開発）</h3>
+                        <p>各職種における具体的な時短・効率化事例の実演。</p>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <span class="chapter-badge">Chapter 5</span>
+                    <div class="chapter-content">
+                        <h3>社内導入のロードマップ作成</h3>
+                        <p>自社にAI文化を根付かせるためのステップ論。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 導入ステップ -->
+    <section class="section" style="background-color: #F8FAFC;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">導入はとてもシンプルです</h2>
+                <p class="section-subtitle">最短期間で社内への展開が可能です</p>
+            </div>
+            
+            <div class="flow-container">
+                <div class="flow-card">
+                    <span class="flow-step">STEP 1</span>
+                    <div class="flow-title">お申し込み<br>アカウント発行</div>
+                </div>
+                <div class="flow-card">
+                    <span class="flow-step">STEP 2</span>
+                    <div class="flow-title">管理者様による<br>ユーザー登録</div>
+                </div>
+                <div class="flow-card">
+                    <span class="flow-step">STEP 3</span>
+                    <div class="flow-title">社員各自で<br>動画視聴</div>
+                </div>
+                <div class="flow-card">
+                    <span class="flow-step">STEP 4</span>
+                    <div class="flow-title">実践ワーク<br>社内への展開</div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=2000&auto=format&fit=crop" alt="オフィス風景" style="max-width: 100%; border-radius: 8px; margin: 0 auto; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <!-- コースタイプ紹介 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">職種に合わせて選べる4つの講座</h2>
+                <p class="section-subtitle">1人1講座（10時間分）で、現場の業務を直接改善します</p>
+            </div>
+            <div class="course-types">
+                <div class="course-card">
+                    <div class="course-card-icon">A</div>
+                    <div>
+                        <strong>Type A：共通業務効率化</strong>
+                        <p style="font-size: 0.9rem; color: #666;">議事録要約、メール作成、翻訳など、全社員必須の基礎スキル。</p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-card-icon">B</div>
+                    <div>
+                        <strong>Type B：営業・セールス</strong>
+                        <p style="font-size: 0.9rem; color: #666;">商談準備、提案書構成案の作成、顧客メールの自動生成など。</p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-card-icon">C</div>
+                    <div>
+                        <strong>Type C：マーケティング</strong>
+                        <p style="font-size: 0.9rem; color: #666;">SNS投稿案、広告コピー作成、市場調査分析、ペルソナ設計。</p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-card-icon">D</div>
+                    <div>
+                        <strong>Type D：人事・採用</strong>
+                        <p style="font-size: 0.9rem; color: #666;">求人票作成、スカウトメール文面、面接質問リストの生成。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金プラン -->
+    <section class="section pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">選べる2つのプラン</h2>
+            </div>
+            
+            <div class="pricing-wrapper">
+                
+                <!-- プラン1: 社長向け -->
+                <div class="pricing-card plan-a">
+                    <div class="pricing-title">社長向け戦略プラン</div>
+                    <p style="text-align: center; color: #666; font-size: 0.9rem;">まずは経営者が効果を体感したい方へ</p>
+                    
+                    <div class="pricing-price">
+                        <span class="price-large">50,000</span>
+                        <span class="price-sub">円（税別）</span>
+                        <span style="display: block; font-size: 0.9rem; margin-top: 5px;">※2時間完結</span>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li><strong>AI基礎講座（2時間）</strong></li>
+                        <li>採用に即使えるコピー案作成</li>
+                        <li>御社の業務を変えるDXメニュー3本提案</li>
+                        <li>助成金活用プランの作成提案</li>
+                    </ul>
+
+                    <a href="#contact" class="btn-cta" style="background: #E2E8F0; color: #0F172A; box-shadow: none;">申し込む</a>
+                </div>
+
+                <!-- プラン2: 社員研修（助成金） -->
+                <div class="pricing-card plan-b">
+                    <span class="plan-badge">おすすめ！助成金活用で大幅還元</span>
+                    <div class="pricing-title">社員リスキリングプラン</div>
+                    <p style="text-align: center; color: #666; font-size: 0.9rem;">組織全体の生産性を上げたい方へ</p>
+                    
+                    <div class="pricing-price">
+                        <span class="price-large">300,000</span>
+                        <span class="price-sub">円/人（税別）</span>
+                        <span class="price-highlight">➡ 実質 約75,000円〜</span>
+                        <span style="font-size: 0.8rem; color: #666;">（3名様受講で助成金利用時）</span>
+                    </div>
+
+                    <div class="campaign-box">
+                        <div>✨ 役員無料キャンペーン ✨</div>
+                        <div style="font-size: 0.9rem; margin-top: 5px;">
+                            社員3名以上のご利用で<br>
+                            <strong>＋社長・役員1名分が無料！</strong>
+                        </div>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li><strong>1人1講座（10時間分）</strong></li>
+                        <li class="required">助成金申請は3名様受講から</li>
+                        <li class="required">助成金対象：社会保険加入者</li>
+                        <li>Type A〜Dから選択可能</li>
+                        <li><strong>助成金申請 完全サポート付き</strong></li>
+                    </ul>
+
+                    <a href="#contact" class="btn-cta">助成金相談・申し込む</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQセクション -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">よくある質問</h2>
+                <p class="section-subtitle">導入に関するご質問にお答えします</p>
+            </div>
+            
+            <div class="faq-container">
+                <!-- Q1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">
+                            <span class="q-mark">Q</span>
+                            <span>助成金の申請手続きは難しいですか？</span>
+                        </div>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            ご安心ください。弊社では提携する社会保険労務士と連携し、複雑な「計画届」の作成から「支給申請」まで、すべてのステップを完全サポートいたします。お客様に行っていただくのは、必要な書類の準備と押印のみです。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">
+                            <span class="q-mark">Q</span>
+                            <span>社長一人でも受講できますか？</span>
+                        </div>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            はい、可能です。社長様お一人での受講の場合は「社長向け戦略プラン（50,000円）」をご利用ください。ただし、助成金を活用した「社員リスキリングプラン」をご希望の場合は、社会保険に加入している社員様3名以上でのご利用が必要となります。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">
+                            <span class="q-mark">Q</span>
+                            <span>AIやITの知識が全くなくても大丈夫ですか？</span>
+                        </div>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            はい、問題ございません。本カリキュラムは、専門用語を極力使わず、ビジネスの現場ですぐに使える具体的な活用方法を中心に構成されています。PCの基本操作ができれば、どなたでも習得可能な内容となっております。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">
+                            <span class="q-mark">Q</span>
+                            <span>支払い方法はどのようになりますか？</span>
+                        </div>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            法人様向けの銀行振込（請求書払い）に対応しております。お申し込み確認後、請求書を発行させていただきます。助成金活用プランの場合、まず全額をお支払いいただき、研修終了後に国から助成金が振り込まれる流れとなります。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-q-icon">
+                            <span class="q-mark">Q</span>
+                            <span>ChatGPTのアカウントは必要ですか？</span>
+                        </div>
+                        <div class="faq-toggle"></div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            はい、受講にはChatGPTのアカウント（無料版でも可、推奨は有料版GPT-4）が必要です。アカウントの作成方法についても、導入マニュアルにてご案内しておりますのでご安心ください。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- プロンプト体験 -->
+    <section class="section demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">まずは効果を体験</h2>
+                <p class="section-subtitle">以下のプロンプトをコピーしてChatGPTでお試しください</p>
+            </div>
+            <div class="demo-wrapper">
+                <label style="font-weight: 700; display: block; margin-bottom: 10px;">▼ 採用スカウトメール生成プロンプト</label>
+                <textarea id="promptText" class="prompt-textarea" readonly>
+あなたは優秀な採用人事です。
+以下の[会社概要]と[求める人物像]を元に、
+転職潜在層のエンジニアに響く、熱意あるスカウトメールの文案を3パターン作成してください。
+
+【条件】
+・件名は開封したくなるキャッチーなもの
+・固すぎず、親しみやすい文体
+・弊社の魅力（成長環境）を強調
+
+[会社概要]
+(ここに自社の概要を入力)
+
+[求める人物像]
+(ここに求めるスキルや人物像を入力)
+                </textarea>
+                <button class="copy-btn" onclick="copyToClipboard()">
+                    <span id="btnText">このプロンプトをコピーする</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer id="contact">
+        <div class="container">
+            <div class="logo" style="color: white; margin-bottom: 20px;">withAI</div>
+            <div style="color: #94A3B8; font-size: 0.9rem; margin-bottom: 20px;">
+                運営：<a href="https://www.withprojects.co.jp/" target="_blank" style="text-decoration: underline; color: inherit;">withprojects株式会社</a><br>
+                お問い合わせ：withprojects.project@gmail.com
+            </div>
+            <div class="copyright">
+                &copy; 2025 withprojects Inc. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- スマホ用 固定CTA -->
+    <div class="bottom-cta-bar">
+        <a href="#pricing" class="btn-cta">料金・プランを見る</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // クリップボードコピー機能
+        function copyToClipboard() {
+            const copyText = document.getElementById("promptText");
+            const btnText = document.getElementById("btnText");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value).then(() => {
+                btnText.innerText = "コピーしました！";
+                setTimeout(() => { btnText.innerText = "このプロンプトをコピーする"; }, 3000);
+            });
+        }
+
+        // FAQアコーディオン機能
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const item = question.parentElement;
+                    const answer = question.nextElementSibling;
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+
+                    if (item.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    } else {
+                        answer.style.maxHeight = null;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
