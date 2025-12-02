@@ -1,0 +1,1355 @@
+{\rtf1\ansi\ansicpg932\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset128 HiraginoSans-W3;\f2\fnil\fcharset77 ZapfDingbatsITC;
+\f3\fnil\fcharset0 AppleColorEmoji;\f4\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="ja">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>President AI Academy | 
+\f1 \'8f\'95\'90\'ac\'8b\'e0\'8a\'88\'97\'70\'8c\'5e
+\f0  AI
+\f1 \'90\'6c\'8d\'de\'88\'e7\'90\'ac\'83\'76\'83\'8d\'83\'4f\'83\'89\'83\'80
+\f0 </title>\
+    <meta name="description" content="
+\f1 \'92\'86\'8f\'ac\'8a\'e9\'8b\'c6\'82\'cc\'8c\'6f\'89\'63\'8e\'d2\'81\'45\'96\'f0\'88\'f5\'91\'77\'82\'c9\'93\'c1\'89\'bb\'82\'b5\'82\'bd\'81\'41\'8e\'c0\'91\'48\'93\'49
+\f0 AI
+\f1 \'8a\'88\'97\'70\'83\'72\'83\'66\'83\'49\'83\'76\'83\'8d\'83\'4f\'83\'89\'83\'80\'81\'42\'90\'6c\'8d\'de\'8a\'4a\'94\'ad\'8e\'78\'89\'87\'8f\'95\'90\'ac\'8b\'e0\'82\'f0\'8a\'88\'97\'70\'82\'b5\'81\'41\'8d\'c5\'91\'e5
+\f0 75%
+\f1 \'82\'cc\'83\'52\'83\'58\'83\'67\'8d\'ed\'8c\'b8\'82\'f0\'8e\'c0\'8c\'bb\'82\'b5\'82\'dc\'82\'b7\'81\'42
+\f0 ">\
+    \
+    <!-- Google Fonts: 
+\f1 \'90\'4d\'97\'8a\'8a\'b4\'82\'cc\'82\'a0\'82\'e9
+\f0 Noto Sans JP -->\
+    <link rel="preconnect" href="https://fonts.googleapis.com">\
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">\
+    \
+    <style>\
+        /* =========================================\
+           
+\f1 \'8a\'ee\'96\'7b\'90\'dd\'92\'e8
+\f0  / 
+\f1 \'83\'4a\'83\'89\'81\'5b\'83\'70\'83\'8c\'83\'62\'83\'67
+\f0 \
+           ========================================= */\
+        :root \{\
+            --color-navy: #0F172A;       /* 
+\f1 \'83\'78\'81\'5b\'83\'58\'83\'4a\'83\'89\'81\'5b\'81\'69\'90\'4d\'97\'8a\'81\'45\'92\'6d\'90\'ab\'81\'6a
+\f0  */\
+            --color-navy-light: #1E293B; /* 
+\f1 \'96\'be\'82\'e9\'82\'df\'82\'cc\'83\'6c\'83\'43\'83\'72\'81\'5b
+\f0  */\
+            --color-gold: #C29B40;       /* 
+\f1 \'83\'41\'83\'4e\'83\'5a\'83\'93\'83\'67\'81\'69\'8d\'82\'8b\'89\'8a\'b4\'81\'45\'95\'69\'8e\'bf\'81\'6a
+\f0  */\
+            --color-gold-hover: #D4AF37; \
+            --color-gold-light: #FDF8E8; /* 
+\f1 \'83\'53\'81\'5b\'83\'8b\'83\'68\'82\'cc\'94\'96\'82\'a2\'94\'77\'8c\'69\'90\'46
+\f0  */\
+            --color-red: #DC2626;        /* 
+\f1 \'8b\'ad\'92\'b2\'97\'70\'81\'69\'8f\'95\'90\'ac\'8b\'e0\'82\'c8\'82\'c7\'81\'6a
+\f0  */\
+            \
+            --color-text-body: #334155;\
+            --color-text-white: #FFFFFF;\
+            --color-bg-light: #F8FAFC;   /* 
+\f1 \'90\'b4\'8c\'89\'8a\'b4\'82\'cc\'82\'a0\'82\'e9\'94\'92\'94\'77\'8c\'69
+\f0  */\
+            \
+            --font-main: "Noto Sans JP", sans-serif;\
+            --max-width: 1080px;         \
+            \
+            --btn-shadow: 0 4px 15px rgba(194, 155, 64, 0.4);\
+        \}\
+\
+        /* 
+\f1 \'83\'8a\'83\'5a\'83\'62\'83\'67
+\f0 CSS */\
+        * \{ margin: 0; padding: 0; box-sizing: border-box; \}\
+        \
+        body \{\
+            font-family: var(--font-main);\
+            color: var(--color-text-body);\
+            line-height: 1.8;\
+            background-color: var(--color-bg-light);\
+            font-size: 16px;\
+            padding-bottom: 80px; /* SP
+\f1 \'82\'cc\'92\'c7\'8f\'5d\'83\'7b\'83\'5e\'83\'93\'97\'70\'97\'5d\'94\'92
+\f0  */\
+        \}\
+\
+        a \{ text-decoration: none; color: inherit; transition: 0.3s; \}\
+        img \{ max-width: 100%; height: auto; display: block; object-fit: cover; \}\
+        ul \{ list-style: none; \}\
+\
+        /* =========================================\
+           
+\f1 \'8b\'a4\'92\'ca\'83\'52\'83\'93\'83\'7c\'81\'5b\'83\'6c\'83\'93\'83\'67
+\f0 \
+           ========================================= */\
+        .container \{\
+            max-width: var(--max-width);\
+            margin: 0 auto;\
+            padding: 0 24px;\
+        \}\
+\
+        .section \{\
+            padding: 80px 0;\
+        \}\
+\
+        /* 
+\f1 \'83\'5a\'83\'4e\'83\'56\'83\'87\'83\'93\'8c\'a9\'8f\'6f\'82\'b5
+\f0  */\
+        .section-header \{\
+            text-align: center;\
+            margin-bottom: 60px;\
+        \}\
+\
+        .section-title \{\
+            font-size: 2.2rem;\
+            color: var(--color-navy);\
+            font-weight: 700;\
+            margin-bottom: 16px;\
+            position: relative;\
+            display: inline-block;\
+        \}\
+        \
+        .section-title::after \{\
+            content: '';\
+            display: block;\
+            width: 60px;\
+            height: 3px;\
+            background-color: var(--color-gold);\
+            margin: 16px auto 0;\
+        \}\
+\
+        .section-subtitle \{\
+            font-size: 1rem;\
+            color: #64748B;\
+        \}\
+\
+        /* 
+\f1 \'8d\'82\'8b\'89\'8a\'b4\'82\'cc\'82\'a0\'82\'e9
+\f0 CTA
+\f1 \'83\'7b\'83\'5e\'83\'93
+\f0  */\
+        .btn-cta \{\
+            display: inline-block;\
+            background: linear-gradient(135deg, var(--color-gold) 0%, #B08D38 100%);\
+            color: white;\
+            font-weight: 700;\
+            font-size: 1.1rem;\
+            padding: 18px 48px;\
+            border-radius: 4px;\
+            box-shadow: var(--btn-shadow);\
+            text-align: center;\
+            letter-spacing: 0.05em;\
+            width: 100%;\
+            max-width: 320px;\
+        \}\
+\
+        .btn-cta:hover \{\
+            transform: translateY(-2px);\
+            box-shadow: 0 6px 20px rgba(194, 155, 64, 0.6);\
+            opacity: 0.95;\
+        \}\
+        \
+        .btn-cta small \{\
+            display: block;\
+            font-size: 0.8em;\
+            font-weight: 500;\
+            margin-bottom: 4px;\
+            opacity: 0.9;\
+        \}\
+\
+        @media (max-width: 768px) \{\
+            .section \{ padding: 60px 0; \}\
+            .section-title \{ font-size: 1.75rem; \}\
+            .container \{ padding: 0 20px; \}\
+        \}\
+\
+        /* =========================================\
+           1. 
+\f1 \'83\'77\'83\'62\'83\'5f\'81\'5b
+\f0 \
+           ========================================= */\
+        header \{\
+            background-color: white;\
+            height: 70px;\
+            display: flex;\
+            align-items: center;\
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);\
+            position: sticky;\
+            top: 0;\
+            z-index: 1000;\
+        \}\
+\
+        .header-inner \{\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+            width: 100%;\
+        \}\
+\
+        .logo \{\
+            font-size: 1.25rem;\
+            font-weight: 700;\
+            color: var(--color-navy);\
+            display: flex;\
+            align-items: center;\
+            gap: 8px;\
+        \}\
+        \
+        .logo span \{ color: var(--color-gold); \}\
+\
+        .header-btn \{\
+            background-color: var(--color-navy);\
+            color: white;\
+            padding: 10px 24px;\
+            font-size: 0.9rem;\
+            border-radius: 4px;\
+            font-weight: 500;\
+        \}\
+        \
+        @media (max-width: 768px) \{\
+            .header-btn \{ display: none; \}\
+        \}\
+\
+        /* =========================================\
+           2. 
+\f1 \'83\'71\'81\'5b\'83\'8d\'81\'5b\'83\'5a\'83\'4e\'83\'56\'83\'87\'83\'93
+\f0 \
+           ========================================= */\
+        .hero \{\
+            background-color: var(--color-navy);\
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1492571350019-22de08371fd3?q=80&w=2000&auto=format&fit=crop');\
+            background-size: cover;\
+            background-position: center;\
+            color: white;\
+            padding: 80px 0 100px;\
+            position: relative;\
+            overflow: hidden;\
+        \}\
+\
+        .hero::before \{\
+            content: '';\
+            position: absolute;\
+            top: 0; left: 0; right: 0; bottom: 0;\
+            background-image: radial-gradient(#ffffff 1px, transparent 1px);\
+            background-size: 40px 40px;\
+            opacity: 0.05;\
+        \}\
+\
+        .hero-container \{\
+            position: relative;\
+            z-index: 2;\
+            display: flex;\
+            align-items: center;\
+            justify-content: space-between;\
+            gap: 40px;\
+        \}\
+\
+        .hero-text \{\
+            max-width: 600px;\
+        \}\
+\
+        .hero-badge \{\
+            background-color: var(--color-gold);\
+            color: white;\
+            font-size: 0.9rem;\
+            padding: 6px 16px;\
+            display: inline-block;\
+            margin-bottom: 24px;\
+            font-weight: 500;\
+        \}\
+\
+        .hero h1 \{\
+            font-size: 2.8rem;\
+            line-height: 1.4;\
+            margin-bottom: 30px;\
+            font-weight: 700;\
+        \}\
+\
+        .hero h1 span \{\
+            color: #FFD700;\
+            background: linear-gradient(to right, #FFD700, #FDB931);\
+            -webkit-background-clip: text;\
+            -webkit-text-fill-color: transparent;\
+        \}\
+\
+        .hero p \{\
+            font-size: 1.1rem;\
+            color: #CBD5E1;\
+            margin-bottom: 40px;\
+            line-height: 1.8;\
+        \}\
+\
+        .hero-image \{\
+            flex: 1;\
+            display: flex;\
+            justify-content: center;\
+        \}\
+        \
+        .hero-card \{\
+            background: rgba(255,255,255,0.05);\
+            backdrop-filter: blur(10px);\
+            border: 1px solid rgba(255,255,255,0.1);\
+            padding: 20px;\
+            border-radius: 8px;\
+            width: 100%;\
+            max-width: 400px;\
+            background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop'); \
+            background-size: cover;\
+            position: relative;\
+            height: 240px;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+        \}\
+        \
+        .hero-card::before \{\
+            content: '';\
+            position: absolute;\
+            top: 0; left: 0; width: 100%; height: 100%;\
+            background: rgba(0,0,0,0.5);\
+            border-radius: 8px;\
+        \}\
+\
+        .play-btn \{\
+            width: 60px;\
+            height: 60px;\
+            background: rgba(255, 255, 255, 0.9);\
+            border-radius: 50%;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            color: var(--color-navy);\
+            font-size: 24px;\
+            z-index: 2;\
+            cursor: pointer;\
+            box-shadow: 0 0 20px rgba(255,255,255,0.3);\
+        \}\
+\
+        @media (max-width: 768px) \{\
+            .hero-container \{ flex-direction: column; text-align: left; \}\
+            .hero h1 \{ font-size: 2rem; \}\
+            .hero \{ padding: 60px 0; \}\
+            .hero-image \{ width: 100%; margin-top: 20px; \}\
+        \}\
+\
+        /* =========================================\
+           3. 
+\f1 \'89\'db\'91\'e8\'83\'5a\'83\'4e\'83\'56\'83\'87\'83\'93
+\f0 \
+           ========================================= */\
+        .problems \{\
+            background-color: white;\
+        \}\
+\
+        .problems-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(3, 1fr);\
+            gap: 32px;\
+        \}\
+\
+        .problem-item \{\
+            background-color: var(--color-bg-light);\
+            padding: 32px 24px;\
+            border-top: 4px solid var(--color-navy);\
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);\
+        \}\
+\
+        .problem-icon \{\
+            font-size: 2rem;\
+            margin-bottom: 16px;\
+            color: var(--color-navy);\
+        \}\
+\
+        .problem-item h3 \{\
+            font-size: 1.2rem;\
+            margin-bottom: 16px;\
+            color: var(--color-navy);\
+        \}\
+\
+        @media (max-width: 768px) \{\
+            .problems-grid \{ grid-template-columns: 1fr; \}\
+        \}\
+\
+        /* =========================================\
+           4. 
+\f1 \'8f\'95\'90\'ac\'8b\'e0\'89\'f0\'90\'e0\'83\'5a\'83\'4e\'83\'56\'83\'87\'83\'93
+\f0 \
+           ========================================= */\
+        .subsidy-section \{\
+            background: linear-gradient(to bottom, #F8FAFC, #FFFFFF);\
+            border-bottom: 1px solid #eee;\
+        \}\
+\
+        .subsidy-box \{\
+            background: white;\
+            border: 2px solid var(--color-red);\
+            border-radius: 12px;\
+            padding: 40px;\
+            position: relative;\
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.08);\
+        \}\
+\
+        .subsidy-label \{\
+            position: absolute;\
+            top: -15px;\
+            left: 50%;\
+            transform: translateX(-50%);\
+            background: var(--color-red);\
+            color: white;\
+            padding: 5px 24px;\
+            font-weight: 700;\
+            border-radius: 50px;\
+        \}\
+\
+        .subsidy-content h3 \{\
+            text-align: center;\
+            font-size: 1.8rem;\
+            color: var(--color-navy);\
+            margin-bottom: 30px;\
+        \}\
+\
+        .subsidy-points \{\
+            display: grid;\
+            grid-template-columns: repeat(3, 1fr);\
+            gap: 20px;\
+            margin-bottom: 30px;\
+        \}\
+\
+        .subsidy-point \{\
+            text-align: center;\
+            background: #FEF2F2;\
+            padding: 20px;\
+            border-radius: 8px;\
+        \}\
+\
+        .subsidy-point strong \{\
+            display: block;\
+            color: var(--color-red);\
+            font-size: 1.4rem;\
+            margin-bottom: 8px;\
+        \}\
+\
+        .subsidy-math \{\
+            background: var(--color-navy);\
+            color: white;\
+            padding: 20px;\
+            border-radius: 8px;\
+            text-align: center;\
+            font-size: 1.1rem;\
+            position: relative;\
+        \}\
+\
+        .subsidy-math span \{\
+            color: #FCD34D;\
+            font-weight: 700;\
+            font-size: 1.4rem;\
+        \}\
+\
+        /* 
+\f1 \'8f\'64\'97\'76\'8e\'96\'8d\'80\'82\'cc\'92\'8d\'8b\'4c
+\f0  */\
+        .subsidy-caution \{\
+            background: #fff;\
+            border: 1px solid var(--color-red);\
+            color: var(--color-red);\
+            font-size: 0.9rem;\
+            padding: 12px;\
+            margin-top: 15px;\
+            text-align: center;\
+            border-radius: 4px;\
+            font-weight: bold;\
+        \}\
+\
+        @media (max-width: 768px) \{\
+            .subsidy-points \{ grid-template-columns: 1fr; \}\
+            .subsidy-content h3 \{ font-size: 1.4rem; \}\
+        \}\
+\
+        /* =========================================\
+           5. 
+\f1 \'8d\'75\'8d\'c0\'83\'5e\'83\'43\'83\'76
+\f0 \
+           ========================================= */\
+        .course-types \{\
+            display: grid;\
+            grid-template-columns: repeat(2, 1fr);\
+            gap: 20px;\
+            margin-bottom: 40px;\
+        \}\
+        \
+        .course-card \{\
+            background: white;\
+            border: 1px solid #E2E8F0;\
+            padding: 20px;\
+            border-radius: 8px;\
+            display: flex;\
+            align-items: center;\
+            gap: 16px;\
+        \}\
+        \
+        .course-card-icon \{\
+            background: var(--color-navy);\
+            color: white;\
+            width: 50px;\
+            height: 50px;\
+            border-radius: 50%;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            font-weight: 700;\
+            flex-shrink: 0;\
+        \}\
+\
+        @media (max-width: 768px) \{\
+            .course-types \{ grid-template-columns: 1fr; \}\
+        \}\
+\
+        /* =========================================\
+           6. 
+\f1 \'83\'76\'83\'8d\'83\'93\'83\'76\'83\'67\'91\'cc\'8c\'b1
+\f0 \
+           ========================================= */\
+        .demo-section \{\
+            background-color: var(--color-gold-light);\
+            padding: 100px 0;\
+        \}\
+\
+        .demo-wrapper \{\
+            max-width: 800px;\
+            margin: 0 auto;\
+            background: white;\
+            padding: 40px;\
+            border-radius: 12px;\
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);\
+            border: 1px solid rgba(194, 155, 64, 0.2);\
+        \}\
+\
+        .prompt-textarea \{\
+            width: 100%;\
+            height: 150px;\
+            padding: 20px;\
+            border: 2px solid #E2E8F0;\
+            border-radius: 8px;\
+            background-color: #F8FAFC;\
+            font-family: monospace;\
+            resize: none;\
+            color: #334155;\
+            margin-bottom: 16px;\
+        \}\
+        \
+        .copy-btn \{\
+            display: block;\
+            width: 100%;\
+            background-color: var(--color-navy);\
+            color: white;\
+            border: none;\
+            padding: 14px;\
+            border-radius: 6px;\
+            font-weight: 700;\
+            cursor: pointer;\
+        \}\
+\
+        /* =========================================\
+           7. 
+\f1 \'97\'bf\'8b\'e0\'83\'76\'83\'89\'83\'93
+\f0 \
+           ========================================= */\
+        .pricing-section \{\
+            background-color: white;\
+            padding-bottom: 120px;\
+        \}\
+\
+        .pricing-wrapper \{\
+            display: flex;\
+            justify-content: center;\
+            gap: 30px;\
+            align-items: stretch;\
+            flex-wrap: wrap;\
+        \}\
+\
+        /* 
+\f1 \'8b\'a4\'92\'ca\'83\'4a\'81\'5b\'83\'68\'83\'58\'83\'5e\'83\'43\'83\'8b
+\f0  */\
+        .pricing-card \{\
+            background: white;\
+            border: 1px solid #E2E8F0;\
+            border-radius: 12px;\
+            width: 100%;\
+            max-width: 480px;\
+            padding: 40px 30px;\
+            display: flex;\
+            flex-direction: column;\
+            position: relative;\
+            transition: 0.3s;\
+        \}\
+\
+        /* 
+\f1 \'83\'76\'83\'89\'83\'93
+\f0 A
+\f1 \'81\'46\'8e\'d0\'92\'b7\'8c\'fc\'82\'af
+\f0  */\
+        .pricing-card.plan-a \{\
+            border-top: 6px solid var(--color-navy);\
+        \}\
+\
+        /* 
+\f1 \'83\'76\'83\'89\'83\'93
+\f0 B
+\f1 \'81\'46\'8f\'95\'90\'ac\'8b\'e0\'8a\'88\'97\'70
+\f0  */\
+        .pricing-card.plan-b \{\
+            border: 2px solid var(--color-gold);\
+            background: #FFFCF5;\
+            box-shadow: 0 20px 40px rgba(194, 155, 64, 0.15);\
+            transform: scale(1.02);\
+            z-index: 2;\
+        \}\
+\
+        .plan-badge \{\
+            position: absolute;\
+            top: -15px;\
+            left: 50%;\
+            transform: translateX(-50%);\
+            background: var(--color-gold);\
+            color: white;\
+            padding: 6px 20px;\
+            border-radius: 30px;\
+            font-weight: 700;\
+            font-size: 0.9rem;\
+            white-space: nowrap;\
+        \}\
+\
+        .pricing-title \{\
+            font-size: 1.4rem;\
+            font-weight: 700;\
+            color: var(--color-navy);\
+            margin-bottom: 10px;\
+            text-align: center;\
+        \}\
+\
+        .pricing-price \{\
+            text-align: center;\
+            margin: 20px 0;\
+            color: var(--color-navy);\
+        \}\
+\
+        .price-large \{\
+            font-size: 2.5rem;\
+            font-weight: 700;\
+        \}\
+        \
+        .price-sub \{\
+            font-size: 0.9rem;\
+            color: #64748B;\
+        \}\
+\
+        .price-highlight \{\
+            color: var(--color-red);\
+            font-weight: 700;\
+            display: block;\
+            margin-top: 5px;\
+            font-size: 1.1rem;\
+        \}\
+\
+        .pricing-features \{\
+            margin: 20px 0;\
+            flex-grow: 1;\
+        \}\
+\
+        .pricing-features li \{\
+            margin-bottom: 12px;\
+            padding-left: 24px;\
+            position: relative;\
+            font-size: 0.95rem;\
+        \}\
+\
+        .pricing-features li::before \{\
+            content: '
+\f2 \uc0\u10004 
+\f0 ';\
+            position: absolute;\
+            left: 0;\
+            color: var(--color-gold);\
+            font-weight: bold;\
+        \}\
+\
+        /* 
+\f1 \'95\'4b\'90\'7b\'8f\'f0\'8c\'8f\'82\'cc\'90\'d4\'95\'b6\'8e\'9a
+\f0  */\
+        .pricing-features li.required \{\
+            color: var(--color-red);\
+            font-weight: bold;\
+        \}\
+        .pricing-features li.required::before \{\
+            content: '
+\f3 \uc0\u9888 \u65039 
+\f0 ';\
+            color: inherit;\
+        \}\
+\
+        .campaign-box \{\
+            background: var(--color-navy);\
+            color: white;\
+            padding: 15px;\
+            border-radius: 8px;\
+            text-align: center;\
+            margin-bottom: 20px;\
+        \}\
+        \
+        .campaign-box strong \{\
+            color: #FCD34D;\
+            font-size: 1.1rem;\
+        \}\
+\
+        /* =========================================\
+           
+\f1 \'83\'74\'83\'62\'83\'5e\'81\'5b
+\f0 \
+           ========================================= */\
+        footer \{\
+            background-color: var(--color-navy);\
+            color: white;\
+            padding: 60px 0 100px;\
+            text-align: center;\
+        \}\
+        \
+        .copyright \{\
+            border-top: 1px solid rgba(255,255,255,0.1);\
+            padding-top: 20px;\
+            font-size: 0.8rem;\
+            color: #64748B;\
+        \}\
+        \
+        .bottom-cta-bar \{\
+            position: fixed;\
+            bottom: 0;\
+            left: 0;\
+            width: 100%;\
+            background-color: white;\
+            padding: 16px;\
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);\
+            z-index: 9999;\
+            display: flex;\
+            justify-content: center;\
+        \}\
+\
+        @media (min-width: 769px) \{\
+            .bottom-cta-bar \{ display: none; \}\
+        \}\
+\
+    </style>\
+</head>\
+<body>\
+\
+    <!-- 
+\f1 \'83\'77\'83\'62\'83\'5f\'81\'5b
+\f0  -->\
+    <header>\
+        <div class="container header-inner">\
+            <div class="logo">President AI <span>Academy</span></div>\
+            <a href="#pricing" class="header-btn">
+\f1 \'83\'76\'83\'89\'83\'93\'81\'45\'97\'bf\'8b\'e0\'82\'f0\'8c\'a9\'82\'e9
+\f0 </a>\
+        </div>\
+    </header>\
+\
+    <!-- 
+\f1 \'83\'71\'81\'5b\'83\'8d\'81\'5b
+\f0  -->\
+    <section class="hero">\
+        <div class="container hero-container">\
+            <div class="hero-text">\
+                <span class="hero-badge">
+\f1 \'8c\'6f\'89\'63\'8e\'d2\'81\'45\'96\'f0\'88\'f5\'8c\'fc\'82\'af
+\f0 </span>\
+                <h1>AI
+\f1 \'93\'b1\'93\'fc\'83\'52\'83\'58\'83\'67\'82\'cc
+\f0 <br><span>
+\f1 \'8d\'c5\'91\'e5
+\f0 75%</span>
+\f1 \'82\'f0\'8f\'95\'90\'ac\'8b\'e0\'82\'c5\'8d\'ed\'8c\'b8\'81\'42
+\f0 </h1>\
+                <p>
+\f1 \'81\'75\'82\'c8\'82\'f1\'82\'c6\'82\'c8\'82\'ad\'81\'76\'82\'cc\'93\'b1\'93\'fc\'82\'c5\'8f\'49\'82\'ed\'82\'e7\'82\'b9\'82\'c8\'82\'a2\'81\'42
+\f0 <br>\
+                
+\f1 \'8c\'6f\'89\'63\'90\'ed\'97\'aa\'82\'c6\'82\'b5\'82\'c4\'82\'cc
+\f0 AI
+\f1 \'8a\'88\'97\'70\'82\'c6\'81\'41\'8e\'d0\'88\'f5\'83\'8a\'83\'58\'83\'4c\'83\'8a\'83\'93\'83\'4f\'82\'f0
+\f0 <br>\
+                
+\f1 \'8d\'91\'82\'cc\'8e\'78\'89\'87\'90\'a7\'93\'78\'82\'f0\'8a\'88\'97\'70\'82\'b5\'82\'c4\'8e\'c0\'8c\'bb\'82\'b5\'82\'dc\'82\'b9\'82\'f1\'82\'a9\'81\'48
+\f0 </p>\
+                <div class="pc-only-cta">\
+                    <a href="#pricing" class="btn-cta">\
+                        <small>
+\f1 \'82\'dc\'82\'b8\'82\'cd\'83\'76\'83\'89\'83\'93\'82\'f0\'8a\'6d\'94\'46
+\f0 </small>\
+                        
+\f1 \'97\'bf\'8b\'e0\'81\'45\'8f\'95\'90\'ac\'8b\'e0\'83\'56\'83\'7e\'83\'85\'83\'8c\'81\'5b\'83\'56\'83\'87\'83\'93
+\f0 \
+                    </a>\
+                </div>\
+            </div>\
+            <div class="hero-image">\
+                <div class="hero-card">\
+                    <div class="play-btn">
+\f4 \uc0\u9654 
+\f0 </div>\
+                    <div style="position: absolute; bottom: 20px; left: 20px; z-index: 2; color: white; text-align: left;">\
+                         <strong>AI
+\f1 \'8e\'9e\'91\'e3\'82\'cc\'8c\'6f\'89\'63\'90\'ed\'97\'aa\'81\'69\'83\'5f\'83\'43\'83\'57\'83\'46\'83\'58\'83\'67\'81\'6a
+\f0 </strong><br>\
+                         <span style="font-size: 0.8rem; opacity: 0.8;">
+\f1 \'8d\'c4\'90\'b6\'8e\'9e\'8a\'d4\'81\'46
+\f0 15
+\f1 \'95\'aa
+\f0 </span>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- 
+\f1 \'89\'db\'91\'e8
+\f0  -->\
+    <section class="section problems">\
+        <div class="container">\
+            <div class="section-header">\
+                <h2 class="section-title">AI
+\f1 \'93\'b1\'93\'fc\'82\'cc\'81\'75\'95\'c7\'81\'76\'82\'f0\'8e\'e6\'82\'e8\'95\'a5\'82\'a2\'82\'dc\'82\'b7
+\f0 </h2>\
+                <p class="section-subtitle">
+\f1 \'83\'52\'83\'58\'83\'67\'81\'41\'8b\'b3\'88\'e7\'81\'41\'83\'8a\'83\'58\'83\'4e
+\f0 ...
+\f1 \'8c\'6f\'89\'63\'8e\'d2\'82\'cc\'94\'59\'82\'dd\'82\'f0\'83\'8f\'83\'93\'83\'58\'83\'67\'83\'62\'83\'76\'82\'c5\'89\'f0\'8c\'88
+\f0 </p>\
+            </div>\
+            <div class="problems-grid">\
+                <div class="problem-item">\
+                    <div class="problem-icon">
+\f3 \uc0\u55357 \u56496 
+\f0 </div>\
+                    <h3>
+\f1 \'8b\'b3\'88\'e7\'97\'5c\'8e\'5a\'82\'cc\'8a\'6d\'95\'db
+\f0 </h3>\
+                    <p>
+\f1 \'8a\'4f\'95\'94\'8c\'a4\'8f\'43\'82\'cd\'8d\'82\'8a\'7a\'82\'c5\'81\'41\'91\'53\'8e\'d0\'88\'f5\'82\'d6\'82\'cc\'93\'57\'8a\'4a\'82\'aa\'93\'ef\'82\'b5\'82\'a2\'81\'42
+\f0 <br>
+\f4 \uc0\u8594 
+\f0  <strong>
+\f1 \'8f\'95\'90\'ac\'8b\'e0\'8a\'88\'97\'70\'82\'c5\'8d\'c5\'91\'e5
+\f0 75%
+\f1 \'8a\'d2\'8c\'b3
+\f0 </strong></p>\
+                </div>\
+                <div class="problem-item">\
+                    <div class="problem-icon">
+\f3 \uc0\u55358 \u56596 
+\f0 </div>\
+                    <h3>
+\f1 \'8b\'ef\'91\'cc\'93\'49\'8a\'88\'97\'70\'83\'43\'83\'81\'81\'5b\'83\'57
+\f0 </h3>\
+                    <p>ChatGPT
+\f1 \'82\'f0\'82\'c7\'82\'a4\'8b\'c6\'96\'b1\'82\'c9\'97\'8e\'82\'c6\'82\'b5\'8d\'9e\'82\'de\'82\'a9\'95\'73\'96\'be\'81\'42
+\f0 <br>
+\f4 \uc0\u8594 
+\f0  <strong>
+\f1 \'90\'45\'8e\'ed\'95\'ca\'81\'69\'89\'63\'8b\'c6\'81\'45\'90\'6c\'8e\'96\'93\'99\'81\'6a\'82\'cc\'8e\'c0\'91\'48\'8d\'75\'8d\'c0
+\f0 </strong></p>\
+                </div>\
+                <div class="problem-item">\
+                    <div class="problem-icon">
+\f3 \uc0\u55357 \u56541 
+\f0 </div>\
+                    <h3>
+\f1 \'90\'5c\'90\'bf\'8e\'e8\'91\'b1\'82\'ab\'82\'cc\'94\'cf\'8e\'47\'82\'b3
+\f0 </h3>\
+                    <p>
+\f1 \'8f\'95\'90\'ac\'8b\'e0\'82\'f0\'8e\'67\'82\'a2\'82\'bd\'82\'a2\'82\'aa\'8f\'91\'97\'de\'8d\'ec\'90\'ac\'82\'aa\'96\'ca\'93\'7c\'81\'42
+\f0 <br>
+\f4 \uc0\u8594 
+\f0  <strong>
+\f1 \'90\'5c\'90\'bf\'8a\'ae\'91\'53\'83\'54\'83\'7c\'81\'5b\'83\'67\'95\'74\'82\'ab\'82\'c5\'88\'c0\'90\'53
+\f0 </strong></p>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- 
+\f1 \'8f\'95\'90\'ac\'8b\'e0\'89\'f0\'90\'e0
+\f0  -->\
+    <section class="section subsidy-section">\
+        <div class="container">\
+            <div class="section-header">\
+                <h2 class="section-title">
+\f1 \'81\'75\'90\'6c\'8d\'de\'8a\'4a\'94\'ad\'8e\'78\'89\'87\'8f\'95\'90\'ac\'8b\'e0\'81\'76\'82\'cc\'8a\'88\'97\'70
+\f0 </h2>\
+                <p class="section-subtitle">
+\f1 \'8d\'91\'82\'aa\'90\'84\'8f\'a7\'82\'b7\'82\'e9\'83\'8a\'83\'58\'83\'4c\'83\'8a\'83\'93\'83\'4f\'90\'a7\'93\'78\'82\'f0\'83\'74\'83\'8b\'8a\'88\'97\'70\'82\'c5\'82\'ab\'82\'dc\'82\'b7
+\f0 </p>\
+            </div>\
+            \
+            <div class="subsidy-box">\
+                <span class="subsidy-label">
+\f1 \'95\'d4\'8d\'cf\'95\'73\'97\'76\'81\'45\'91\'e5\'8a\'e9\'8b\'c6\'82\'e0
+\f0 OK</span>\
+                <div class="subsidy-content">\
+                    <h3>
+\f1 \'8e\'f3\'8d\'75\'97\'bf\'82\'cc
+\f0 60%
+\f1 \'81\'60\'8d\'c5\'91\'e5
+\f0 75%
+\f1 \'82\'aa\'96\'df\'82\'c1\'82\'c4\'82\'ab\'82\'dc\'82\'b7
+\f0 </h3>\
+                    <div class="subsidy-points">\
+                        <div class="subsidy-point">\
+                            <strong>
+\f1 \'90\'52\'8d\'b8\'82\'c8\'82\'b5
+\f0 </strong>\
+                            <p>
+\f1 \'97\'76\'8c\'8f\'82\'f0\'96\'9e\'82\'bd\'82\'b9\'82\'ce\'8e\'f3\'8b\'8b\'89\'c2\'94\'5c\'81\'42
+\f0 <br>
+\f1 \'8c\'b5\'8a\'69\'82\'c8\'90\'52\'8d\'b8\'82\'cd\'82\'a0\'82\'e8\'82\'dc\'82\'b9\'82\'f1\'81\'42
+\f0 </p>\
+                        </div>\
+                        <div class="subsidy-point">\
+                            <strong>
+\f1 \'8d\'c5\'91\'e5
+\f0 30
+\f1 \'96\'9c\'89\'7e
+\f0 /
+\f1 \'90\'6c
+\f0 </strong>\
+                            <p>1
+\f1 \'90\'6c\'82\'a0\'82\'bd\'82\'e8\'8d\'c5\'91\'e5
+\f0 30
+\f1 \'96\'9c\'89\'7e\'82\'dc\'82\'c5\'82\'cc
+\f0 <br>
+\f1 \'8f\'95\'90\'ac\'82\'aa\'8e\'f3\'82\'af\'82\'e7\'82\'ea\'82\'dc\'82\'b7\'81\'42
+\f0 </p>\
+                        </div>\
+                        <div class="subsidy-point">\
+                            <strong>
+\f1 \'8a\'ae\'91\'53\'83\'54\'83\'7c\'81\'5b\'83\'67
+\f0 </strong>\
+                            <p>
+\f1 \'95\'a1\'8e\'47\'82\'c8\'8c\'76\'89\'e6\'93\'cd\'82\'cc\'8d\'ec\'90\'ac\'82\'a9\'82\'e7
+\f0 <br>
+\f1 \'90\'5c\'90\'bf\'82\'dc\'82\'c5\'93\'4f\'92\'ea\'8e\'78\'89\'87\'82\'b5\'82\'dc\'82\'b7\'81\'42
+\f0 </p>\
+                        </div>\
+                    </div>\
+                    <div class="subsidy-math">\
+                        
+\f1 \'92\'ca\'8f\'ed
+\f0 1
+\f1 \'90\'6c
+\f0 40
+\f1 \'96\'9c\'89\'7e\'82\'cc\'8d\'75\'8d\'c0\'82\'aa
+\f0 ... <span style="margin: 0 10px;">
+\f4 \uc0\u8594 
+\f0 </span> 
+\f1 \'8e\'c0\'8e\'bf\'95\'89\'92\'53
+\f0  <span style="font-size: 2rem;">
+\f1 \'96\'f1
+\f0 10
+\f1 \'96\'9c\'89\'7e
+\f0 </span> 
+\f1 \'82\'c5\'8e\'f3\'8d\'75\'89\'c2\'94\'5c
+\f0 \
+                        <div style="font-size: 0.9rem; margin-top: 8px; opacity: 0.9;">\uc0\u8251 
+\f1 \'92\'86\'8f\'ac\'8a\'e9\'8b\'c6\'82\'c5
+\f0 75%
+\f1 \'8f\'95\'90\'ac\'82\'cc\'8f\'ea\'8d\'87\'82\'cc\'8e\'8e\'8e\'5a\'82\'c5\'82\'b7\'81\'42\'8f\'da\'8d\'d7\'82\'cd\'82\'a8\'96\'e2\'82\'a2\'8d\'87\'82\'ed\'82\'b9\'82\'ad\'82\'be\'82\'b3\'82\'a2\'81\'42
+\f0 </div>\
+                    </div>\
+                    \
+                    <!-- 
+\f1 \'81\'79\'8f\'64\'97\'76\'81\'7a\'8f\'95\'90\'ac\'8b\'e0\'97\'76\'8c\'8f\'82\'cc\'92\'c7\'8b\'4c
+\f0  -->\
+                    <div class="subsidy-caution">\
+                        
+\f1 \'81\'79\'8f\'64\'97\'76\'81\'7a\'8f\'95\'90\'ac\'8b\'e0\'82\'cc\'8a\'88\'97\'70\'82\'cd\'81\'41\'8e\'d0\'89\'ef\'95\'db\'8c\'af\'82\'c9\'93\'6f\'98\'5e\'82\'b3\'82\'ea\'82\'c4\'82\'a2\'82\'e9\'95\'fb\'82\'cc\'82\'dd\'91\'ce\'8f\'db\'82\'c5\'82\'b7\'81\'42
+\f0 <br>\
+                        <span style="font-weight:normal; font-size:0.85rem;">\uc0\u8251 
+\f1 \'8e\'d0\'92\'b7\'81\'45\'96\'f0\'88\'f5\'82\'cc\'95\'fb\'82\'cd\'91\'ce\'8f\'db\'8a\'4f\'82\'c5\'82\'b7\'82\'aa\'81\'41\'83\'4c\'83\'83\'83\'93\'83\'79\'81\'5b\'83\'93\'93\'4b\'97\'70\'82\'c5\'96\'b3\'97\'bf\'82\'c9\'82\'c8\'82\'e8\'82\'dc\'82\'b7\'81\'42
+\f0 </span>\
+                    </div>\
+\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- 
+\f1 \'83\'52\'81\'5b\'83\'58\'83\'5e\'83\'43\'83\'76\'8f\'d0\'89\'ee
+\f0  -->\
+    <section class="section">\
+        <div class="container">\
+            <div class="section-header">\
+                <h2 class="section-title">
+\f1 \'90\'45\'8e\'ed\'82\'c9\'8d\'87\'82\'ed\'82\'b9\'82\'c4\'91\'49\'82\'d7\'82\'e9
+\f0 4
+\f1 \'82\'c2\'82\'cc\'8d\'75\'8d\'c0
+\f0 </h2>\
+                <p class="section-subtitle">1
+\f1 \'90\'6c
+\f0 1
+\f1 \'8d\'75\'8d\'c0\'81\'69
+\f0 10
+\f1 \'8e\'9e\'8a\'d4\'95\'aa\'81\'6a\'82\'c5\'81\'41\'8c\'bb\'8f\'ea\'82\'cc\'8b\'c6\'96\'b1\'82\'f0\'92\'bc\'90\'da\'89\'fc\'91\'50\'82\'b5\'82\'dc\'82\'b7
+\f0 </p>\
+            </div>\
+            <div class="course-types">\
+                <div class="course-card">\
+                    <div class="course-card-icon">A</div>\
+                    <div>\
+                        <strong>Type A
+\f1 \'81\'46\'8b\'a4\'92\'ca\'8b\'c6\'96\'b1\'8c\'f8\'97\'a6\'89\'bb
+\f0 </strong>\
+                        <p style="font-size: 0.9rem; color: #666;">
+\f1 \'8b\'63\'8e\'96\'98\'5e\'97\'76\'96\'f1\'81\'41\'83\'81\'81\'5b\'83\'8b\'8d\'ec\'90\'ac\'81\'41\'96\'7c\'96\'f3\'82\'c8\'82\'c7\'81\'41\'91\'53\'8e\'d0\'88\'f5\'95\'4b\'90\'7b\'82\'cc\'8a\'ee\'91\'62\'83\'58\'83\'4c\'83\'8b\'81\'42
+\f0 </p>\
+                    </div>\
+                </div>\
+                <div class="course-card">\
+                    <div class="course-card-icon">B</div>\
+                    <div>\
+                        <strong>Type B
+\f1 \'81\'46\'89\'63\'8b\'c6\'81\'45\'83\'5a\'81\'5b\'83\'8b\'83\'58
+\f0 </strong>\
+                        <p style="font-size: 0.9rem; color: #666;">
+\f1 \'8f\'a4\'92\'6b\'8f\'80\'94\'f5\'81\'41\'92\'f1\'88\'c4\'8f\'91\'8d\'5c\'90\'ac\'88\'c4\'82\'cc\'8d\'ec\'90\'ac\'81\'41\'8c\'da\'8b\'71\'83\'81\'81\'5b\'83\'8b\'82\'cc\'8e\'a9\'93\'ae\'90\'b6\'90\'ac\'82\'c8\'82\'c7\'81\'42
+\f0 </p>\
+                    </div>\
+                </div>\
+                <div class="course-card">\
+                    <div class="course-card-icon">C</div>\
+                    <div>\
+                        <strong>Type C
+\f1 \'81\'46\'83\'7d\'81\'5b\'83\'50\'83\'65\'83\'42\'83\'93\'83\'4f
+\f0 </strong>\
+                        <p style="font-size: 0.9rem; color: #666;">SNS
+\f1 \'93\'8a\'8d\'65\'88\'c4\'81\'41\'8d\'4c\'8d\'90\'83\'52\'83\'73\'81\'5b\'8d\'ec\'90\'ac\'81\'41\'8e\'73\'8f\'ea\'92\'b2\'8d\'b8\'95\'aa\'90\'cd\'81\'41\'83\'79\'83\'8b\'83\'5c\'83\'69\'90\'dd\'8c\'76\'81\'42
+\f0 </p>\
+                    </div>\
+                </div>\
+                <div class="course-card">\
+                    <div class="course-card-icon">D</div>\
+                    <div>\
+                        <strong>Type D
+\f1 \'81\'46\'90\'6c\'8e\'96\'81\'45\'8d\'cc\'97\'70
+\f0 </strong>\
+                        <p style="font-size: 0.9rem; color: #666;">
+\f1 \'8b\'81\'90\'6c\'95\'5b\'8d\'ec\'90\'ac\'81\'41\'83\'58\'83\'4a\'83\'45\'83\'67\'83\'81\'81\'5b\'83\'8b\'95\'b6\'96\'ca\'81\'41\'96\'ca\'90\'da\'8e\'bf\'96\'e2\'83\'8a\'83\'58\'83\'67\'82\'cc\'90\'b6\'90\'ac\'81\'42
+\f0 </p>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- 
+\f1 \'97\'bf\'8b\'e0\'83\'76\'83\'89\'83\'93
+\f0  -->\
+    <section class="section pricing-section" id="pricing">\
+        <div class="container">\
+            <div class="section-header">\
+                <h2 class="section-title">
+\f1 \'91\'49\'82\'d7\'82\'e9
+\f0 2
+\f1 \'82\'c2\'82\'cc\'83\'76\'83\'89\'83\'93
+\f0 </h2>\
+            </div>\
+            \
+            <div class="pricing-wrapper">\
+                \
+                <!-- 
+\f1 \'83\'76\'83\'89\'83\'93
+\f0 1: 
+\f1 \'8e\'d0\'92\'b7\'8c\'fc\'82\'af
+\f0  -->\
+                <div class="pricing-card plan-a">\
+                    <div class="pricing-title">
+\f1 \'8e\'d0\'92\'b7\'8c\'fc\'82\'af\'90\'ed\'97\'aa\'83\'76\'83\'89\'83\'93
+\f0 </div>\
+                    <p style="text-align: center; color: #666; font-size: 0.9rem;">
+\f1 \'82\'dc\'82\'b8\'82\'cd\'8c\'6f\'89\'63\'8e\'d2\'82\'aa\'8c\'f8\'89\'ca\'82\'f0\'91\'cc\'8a\'b4\'82\'b5\'82\'bd\'82\'a2\'95\'fb\'82\'d6
+\f0 </p>\
+                    \
+                    <div class="pricing-price">\
+                        <span class="price-large">50,000</span>\
+                        <span class="price-sub">
+\f1 \'89\'7e\'81\'69\'90\'c5\'95\'ca\'81\'6a
+\f0 </span>\
+                        <span style="display: block; font-size: 0.9rem; margin-top: 5px;">\uc0\u8251 2
+\f1 \'8e\'9e\'8a\'d4\'8a\'ae\'8c\'8b
+\f0 </span>\
+                    </div>\
+\
+                    <ul class="pricing-features">\
+                        <li><strong>AI
+\f1 \'8a\'ee\'91\'62\'8d\'75\'8d\'c0\'81\'69
+\f0 2
+\f1 \'8e\'9e\'8a\'d4\'81\'6a
+\f0 </strong></li>\
+                        <li>
+\f1 \'8d\'cc\'97\'70\'82\'c9\'91\'a6\'8e\'67\'82\'a6\'82\'e9\'83\'52\'83\'73\'81\'5b\'88\'c4\'8d\'ec\'90\'ac
+\f0 </li>\
+                        <li>
+\f1 \'8c\'e4\'8e\'d0\'82\'cc\'8b\'c6\'96\'b1\'82\'f0\'95\'cf\'82\'a6\'82\'e9
+\f0 DX
+\f1 \'83\'81\'83\'6a\'83\'85\'81\'5b
+\f0 3
+\f1 \'96\'7b\'92\'f1\'88\'c4
+\f0 </li>\
+                        <li>
+\f1 \'8f\'95\'90\'ac\'8b\'e0\'8a\'88\'97\'70\'83\'76\'83\'89\'83\'93\'82\'cc\'8d\'ec\'90\'ac\'92\'f1\'88\'c4
+\f0 </li>\
+                    </ul>\
+\
+                    <a href="#contact" class="btn-cta" style="background: #E2E8F0; color: #0F172A; box-shadow: none;">
+\f1 \'90\'5c\'82\'b5\'8d\'9e\'82\'de
+\f0 </a>\
+                </div>\
+\
+                <!-- 
+\f1 \'83\'76\'83\'89\'83\'93
+\f0 2: 
+\f1 \'8e\'d0\'88\'f5\'8c\'a4\'8f\'43\'81\'69\'8f\'95\'90\'ac\'8b\'e0\'81\'6a
+\f0  -->\
+                <div class="pricing-card plan-b">\
+                    <span class="plan-badge">
+\f1 \'82\'a8\'82\'b7\'82\'b7\'82\'df\'81\'49\'8f\'95\'90\'ac\'8b\'e0\'82\'c5\'8d\'c5\'91\'e5
+\f0 75%
+\f1 \'8a\'d2\'8c\'b3
+\f0 </span>\
+                    <div class="pricing-title">
+\f1 \'8e\'d0\'88\'f5\'83\'8a\'83\'58\'83\'4c\'83\'8a\'83\'93\'83\'4f\'83\'76\'83\'89\'83\'93
+\f0 </div>\
+                    <p style="text-align: center; color: #666; font-size: 0.9rem;">
+\f1 \'91\'67\'90\'44\'91\'53\'91\'cc\'82\'cc\'90\'b6\'8e\'59\'90\'ab\'82\'f0\'8f\'e3\'82\'b0\'82\'bd\'82\'a2\'95\'fb\'82\'d6
+\f0 </p>\
+                    \
+                    <div class="pricing-price">\
+                        <span class="price-large">400,000</span>\
+                        <span class="price-sub">
+\f1 \'89\'7e
+\f0 /
+\f1 \'90\'6c\'81\'69\'90\'c5\'95\'ca\'81\'6a
+\f0 </span>\
+                        <span class="price-highlight">
+\f2 \uc0\u10145 
+\f0  
+\f1 \'8e\'c0\'8e\'bf
+\f0  
+\f1 \'96\'f1
+\f0 100,000
+\f1 \'89\'7e\'81\'60
+\f0 </span>\
+                        <span style="font-size: 0.8rem; color: #666;">
+\f1 \'81\'69\'90\'6c\'8d\'de\'8a\'4a\'94\'ad\'8e\'78\'89\'87\'8f\'95\'90\'ac\'8b\'e0\'8a\'88\'97\'70\'8e\'9e\'81\'6a
+\f0 </span>\
+                    </div>\
+\
+                    <div class="campaign-box">\
+                        <div>
+\f3 \uc0\u10024 
+\f0  
+\f1 \'96\'f0\'88\'f5\'96\'b3\'97\'bf\'83\'4c\'83\'83\'83\'93\'83\'79\'81\'5b\'83\'93
+\f0  
+\f3 \uc0\u10024 
+\f0 </div>\
+                        <div style="font-size: 0.9rem; margin-top: 5px;">\
+                            
+\f1 \'8e\'d0\'88\'f5
+\f0 3
+\f1 \'96\'bc\'88\'c8\'8f\'e3\'82\'cc\'82\'b2\'97\'98\'97\'70\'82\'c5
+\f0 <br>\
+                            <strong>
+\f1 \'81\'7b\'8e\'d0\'92\'b7\'81\'45\'96\'f0\'88\'f5
+\f0 1
+\f1 \'96\'bc\'95\'aa\'82\'aa\'96\'b3\'97\'bf\'81\'49
+\f0 </strong>\
+                        </div>\
+                    </div>\
+\
+                    <ul class="pricing-features">\
+                        <li><strong>1
+\f1 \'90\'6c
+\f0 1
+\f1 \'8d\'75\'8d\'c0\'81\'69
+\f0 10
+\f1 \'8e\'9e\'8a\'d4\'95\'aa\'81\'6a
+\f0 </strong></li>\
+                        <li class="required">
+\f1 \'8f\'95\'90\'ac\'8b\'e0\'91\'ce\'8f\'db\'81\'46\'8e\'d0\'89\'ef\'95\'db\'8c\'af\'89\'c1\'93\'fc\'8e\'d2\'82\'cc\'82\'dd
+\f0 </li>\
+                        <li>Type A
+\f1 \'81\'60
+\f0 D
+\f1 \'82\'a9\'82\'e7\'91\'49\'91\'f0\'89\'c2\'94\'5c
+\f0 </li>\
+                        <li><strong>
+\f1 \'8f\'95\'90\'ac\'8b\'e0\'90\'5c\'90\'bf
+\f0  
+\f1 \'8a\'ae\'91\'53\'83\'54\'83\'7c\'81\'5b\'83\'67\'95\'74\'82\'ab
+\f0 </strong></li>\
+                        <li>
+\f1 \'91\'e5\'8a\'e9\'8b\'c6\'82\'e0\'97\'98\'97\'70\'89\'c2\'94\'5c
+\f0 </li>\
+                    </ul>\
+\
+                    <a href="#contact" class="btn-cta">
+\f1 \'8f\'95\'90\'ac\'8b\'e0\'91\'8a\'92\'6b\'81\'45\'90\'5c\'82\'b5\'8d\'9e\'82\'de
+\f0 </a>\
+                </div>\
+\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- 
+\f1 \'83\'76\'83\'8d\'83\'93\'83\'76\'83\'67\'91\'cc\'8c\'b1\'81\'69\'89\'ba\'95\'94\'82\'c9\'88\'da\'93\'ae\'81\'6a
+\f0  -->\
+    <section class="section demo-section">\
+        <div class="container">\
+            <div class="section-header">\
+                <h2 class="section-title">
+\f1 \'82\'dc\'82\'b8\'82\'cd\'8c\'f8\'89\'ca\'82\'f0\'91\'cc\'8c\'b1
+\f0 </h2>\
+                <p class="section-subtitle">
+\f1 \'88\'c8\'89\'ba\'82\'cc\'83\'76\'83\'8d\'83\'93\'83\'76\'83\'67\'82\'f0\'83\'52\'83\'73\'81\'5b\'82\'b5\'82\'c4
+\f0 ChatGPT
+\f1 \'82\'c5\'82\'a8\'8e\'8e\'82\'b5\'82\'ad\'82\'be\'82\'b3\'82\'a2
+\f0 </p>\
+            </div>\
+            <div class="demo-wrapper">\
+                <label style="font-weight: 700; display: block; margin-bottom: 10px;">
+\f4 \uc0\u9660 
+\f0  
+\f1 \'8d\'cc\'97\'70\'83\'58\'83\'4a\'83\'45\'83\'67\'83\'81\'81\'5b\'83\'8b\'90\'b6\'90\'ac\'83\'76\'83\'8d\'83\'93\'83\'76\'83\'67
+\f0 </label>\
+                <textarea id="promptText" class="prompt-textarea" readonly>\
+
+\f1 \'82\'a0\'82\'c8\'82\'bd\'82\'cd\'97\'44\'8f\'47\'82\'c8\'8d\'cc\'97\'70\'90\'6c\'8e\'96\'82\'c5\'82\'b7\'81\'42
+\f0 \
+
+\f1 \'88\'c8\'89\'ba\'82\'cc
+\f0 [
+\f1 \'89\'ef\'8e\'d0\'8a\'54\'97\'76
+\f0 ]
+\f1 \'82\'c6
+\f0 [
+\f1 \'8b\'81\'82\'df\'82\'e9\'90\'6c\'95\'a8\'91\'9c
+\f0 ]
+\f1 \'82\'f0\'8c\'b3\'82\'c9\'81\'41
+\f0 \
+
+\f1 \'93\'5d\'90\'45\'90\'f6\'8d\'dd\'91\'77\'82\'cc\'83\'47\'83\'93\'83\'57\'83\'6a\'83\'41\'82\'c9\'8b\'bf\'82\'ad\'81\'41\'94\'4d\'88\'d3\'82\'a0\'82\'e9\'83\'58\'83\'4a\'83\'45\'83\'67\'83\'81\'81\'5b\'83\'8b\'82\'cc\'95\'b6\'88\'c4\'82\'f0
+\f0 3
+\f1 \'83\'70\'83\'5e\'81\'5b\'83\'93\'8d\'ec\'90\'ac\'82\'b5\'82\'c4\'82\'ad\'82\'be\'82\'b3\'82\'a2\'81\'42
+\f0 \
+\
+
+\f1 \'81\'79\'8f\'f0\'8c\'8f\'81\'7a
+\f0 \
+
+\f1 \'81\'45\'8c\'8f\'96\'bc\'82\'cd\'8a\'4a\'95\'95\'82\'b5\'82\'bd\'82\'ad\'82\'c8\'82\'e9\'83\'4c\'83\'83\'83\'62\'83\'60\'81\'5b\'82\'c8\'82\'e0\'82\'cc
+\f0 \
+
+\f1 \'81\'45\'8c\'c5\'82\'b7\'82\'ac\'82\'b8\'81\'41\'90\'65\'82\'b5\'82\'dd\'82\'e2\'82\'b7\'82\'a2\'95\'b6\'91\'cc
+\f0 \
+
+\f1 \'81\'45\'95\'be\'8e\'d0\'82\'cc\'96\'a3\'97\'cd\'81\'69\'90\'ac\'92\'b7\'8a\'c2\'8b\'ab\'81\'6a\'82\'f0\'8b\'ad\'92\'b2
+\f0 \
+\
+[
+\f1 \'89\'ef\'8e\'d0\'8a\'54\'97\'76
+\f0 ]\
+(
+\f1 \'82\'b1\'82\'b1\'82\'c9\'8e\'a9\'8e\'d0\'82\'cc\'8a\'54\'97\'76\'82\'f0\'93\'fc\'97\'cd
+\f0 )\
+\
+[
+\f1 \'8b\'81\'82\'df\'82\'e9\'90\'6c\'95\'a8\'91\'9c
+\f0 ]\
+(
+\f1 \'82\'b1\'82\'b1\'82\'c9\'8b\'81\'82\'df\'82\'e9\'83\'58\'83\'4c\'83\'8b\'82\'e2\'90\'6c\'95\'a8\'91\'9c\'82\'f0\'93\'fc\'97\'cd
+\f0 )\
+                </textarea>\
+                <button class="copy-btn" onclick="copyToClipboard()">\
+                    <span id="btnText">
+\f1 \'82\'b1\'82\'cc\'83\'76\'83\'8d\'83\'93\'83\'76\'83\'67\'82\'f0\'83\'52\'83\'73\'81\'5b\'82\'b7\'82\'e9
+\f0 </span>\
+                </button>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- 
+\f1 \'83\'74\'83\'62\'83\'5e\'81\'5b
+\f0  -->\
+    <footer id="contact">\
+        <div class="container">\
+            <div class="logo" style="color: white; margin-bottom: 20px;">President AI <span>Academy</span></div>\
+            <div style="color: #94A3B8; font-size: 0.9rem; margin-bottom: 20px;">\
+                
+\f1 \'89\'5e\'89\'63\'81\'46
+\f0 <a href="https://www.withprojects.co.jp/" target="_blank" style="text-decoration: underline; color: inherit;">withprojects
+\f1 \'8a\'94\'8e\'ae\'89\'ef\'8e\'d0
+\f0 </a><br>\
+                
+\f1 \'82\'a8\'96\'e2\'82\'a2\'8d\'87\'82\'ed\'82\'b9\'81\'46
+\f0 withprojects.project@gmail.com\
+            </div>\
+            <div class="copyright">\
+                &copy; 2025 withprojects Inc. All Rights Reserved.\
+            </div>\
+        </div>\
+    </footer>\
+\
+    <!-- 
+\f1 \'83\'58\'83\'7d\'83\'7a\'97\'70
+\f0  
+\f1 \'8c\'c5\'92\'e8
+\f0 CTA -->\
+    <div class="bottom-cta-bar">\
+        <a href="#pricing" class="btn-cta">
+\f1 \'97\'bf\'8b\'e0\'81\'45\'83\'76\'83\'89\'83\'93\'82\'f0\'8c\'a9\'82\'e9
+\f0 </a>\
+    </div>\
+\
+    <script>\
+        function copyToClipboard() \{\
+            const copyText = document.getElementById("promptText");\
+            const btnText = document.getElementById("btnText");\
+            copyText.select();\
+            copyText.setSelectionRange(0, 99999);\
+            navigator.clipboard.writeText(copyText.value).then(() => \{\
+                btnText.innerText = "
+\f1 \'83\'52\'83\'73\'81\'5b\'82\'b5\'82\'dc\'82\'b5\'82\'bd\'81\'49
+\f0 ";\
+                setTimeout(() => \{ btnText.innerText = "
+\f1 \'82\'b1\'82\'cc\'83\'76\'83\'8d\'83\'93\'83\'76\'83\'67\'82\'f0\'83\'52\'83\'73\'81\'5b\'82\'b7\'82\'e9
+\f0 "; \}, 3000);\
+            \});\
+        \}\
+    </script>\
+</body>\
+</html>}
